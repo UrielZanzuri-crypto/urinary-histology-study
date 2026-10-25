@@ -21,6 +21,7 @@ main{max-width:1180px;margin:0 auto;padding:16px}
 section{margin:0 0 44px;scroll-margin-top:110px}
 h2{font-size:24px;border-bottom:3px solid var(--accent);padding-bottom:6px;margin:10px 0 14px}
 h2 .en{font-size:17px;font-weight:400;color:var(--muted)}
+h2 > .en:first-child, h2 > .en.main{font-size:24px;font-weight:700;color:var(--ink)}
 h3{font-size:18px;margin:22px 0 8px;color:#153b57}
 h4{margin:12px 0 6px;font-size:16px}
 p{margin:6px 0}
@@ -93,10 +94,10 @@ summary{cursor:pointer;font-weight:600;font-size:16px}
  <nav class="nav">
   <a href="#big">תמונה גדולה</a>
   <a href="#journey">המסע של השתן</a>
-  <a href="#corpuscle">גופיף ומחסום סינון</a>
+  <a href="#corpuscle"><i class="en">Renal corpuscle</i> ו-<i class="en">Filtration barrier</i></a>
   <a href="#tubules">זיהוי צינוריות</a>
   <a href="#jga">JGA ו-RAAS</a>
-  <a href="#cd">צינור מאסף</a>
+  <a href="#cd"><i class="en">Collecting duct</i></a>
   <a href="#blood">אספקת דם</a>
   <a href="#lower">דרכי השתן</a>
   <a href="#epi">מפת האפיתל</a>
@@ -138,102 +139,74 @@ summary{cursor:pointer;font-weight:600;font-size:16px}
    <tr><td>זרימת דם כלייתית <i class="en">(RBF)</i></td><td>~1 ליטר/דקה = 20% מתפוקת הלב</td></tr>
    <tr><td>קצב סינון <i class="en">(GFR)</i></td><td>125 מ"ל/דקה = <b>180 ליטר/יום</b> (פי 60 מנפח הפלזמה)</td></tr>
    <tr><td>שתן סופי</td><td>~1.5 ליטר/יום (כלומר &gt;99% נספג חזרה)</td></tr>
-   <tr><td>זרימה בקליפה לעומת הלשד</td><td>קליפה פי 10</td></tr>
+   <tr><td>זרימה ב-<i class="en">Cortex</i> לעומת ה-<i class="en">Medulla</i></td><td><i class="en">Cortex</i> פי 10</td></tr>
    <tr><td>שטח סינון כולל</td><td>~500 סמ"ר</td></tr>
   </table>
  </div>
 </div>
 
-<h3>המבנה המאקרוסקופי: קליפה, לשד, פירמידות וגביעים</h3>
-<div class="diagram">
-<svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="Arial" font-size="13">
- <path d="M340 22 C 455 22, 545 105, 545 215 C 545 325, 455 408, 340 408 C 285 408, 245 385, 225 350 C 250 310, 262 260, 262 215 C 262 170, 250 120, 225 80 C 245 45, 285 22, 340 22 Z" fill="#b83a30" stroke="#f1e9dc" stroke-width="4" stroke-dasharray="5 4"/>
- <path d="M340 40 C 445 40, 527 115, 527 215 C 527 315, 445 390, 340 390 C 295 390, 262 372, 246 345 C 268 305, 280 260, 280 215 C 280 170, 268 125, 246 85 C 262 58, 295 40, 340 40 Z" fill="#d9655a"/>
- <g fill="#f4c2b3" stroke="#8c2f27" stroke-width="1.5"><path d="M311 160 L244 116 Q271 86 311 80 Z"/><path d="M351 154 L326 78 Q365 71 400 91 Z"/><path d="M387 175 L417 101 Q452 121 466 159 Z"/><path d="M402 215 L473 177 Q486 215 473 253 Z"/><path d="M387 255 L466 271 Q452 309 417 329 Z"/><path d="M351 276 L400 339 Q365 359 326 352 Z"/><path d="M311 270 L311 350 Q271 344 244 314 Z"/></g>
- <g stroke="#8c2f27" stroke-width=".8" opacity=".6"><line x1="302" y1="154" x2="264" y2="110"/><line x1="306" y1="151" x2="279" y2="100"/><line x1="311" y1="149" x2="296" y2="93"/><line x1="348" y1="143" x2="345" y2="85"/><line x1="353" y1="144" x2="363" y2="87"/><line x1="357" y1="145" x2="380" y2="91"/><line x1="392" y1="165" x2="427" y2="118"/><line x1="395" y1="169" x2="440" y2="131"/><line x1="398" y1="173" x2="450" y2="146"/><line x1="412" y1="210" x2="469" y2="197"/><line x1="412" y1="215" x2="470" y2="215"/><line x1="412" y1="220" x2="469" y2="233"/><line x1="398" y1="257" x2="450" y2="284"/><line x1="395" y1="261" x2="440" y2="299"/><line x1="392" y1="265" x2="427" y2="312"/><line x1="357" y1="285" x2="380" y2="339"/><line x1="353" y1="286" x2="363" y2="343"/><line x1="348" y1="287" x2="345" y2="345"/><line x1="311" y1="281" x2="296" y2="337"/><line x1="306" y1="279" x2="279" y2="330"/><line x1="302" y1="276" x2="264" y2="320"/></g>
- <circle cx="340" cy="215" r="50" fill="#f6e2a8"/>
- <g stroke="#c9a227" stroke-width="7" stroke-linecap="round"><line x1="316" y1="169" x2="322" y2="223"/><line x1="349" y1="164" x2="322" y2="223"/><line x1="380" y1="182" x2="322" y2="223"/><line x1="392" y1="215" x2="322" y2="223"/><line x1="380" y1="248" x2="322" y2="223"/><line x1="349" y1="266" x2="322" y2="223"/><line x1="316" y1="261" x2="322" y2="223"/></g>
- <path d="M322 201 L 322 245 L 236 267 L 236 295 L 60 295 L 60 269 L 232 251 L 300 217 Z" fill="#f3d36b" stroke="#a37e14" stroke-width="2"/>
- <g stroke="#a37e14" stroke-width="3"><path d="M293 155 Q317 171 317 143" fill="none"/><path d="M340 139 Q349 166 366 144" fill="none"/><path d="M389 157 Q378 183 406 177" fill="none"/><path d="M415 202 Q390 215 415 228" fill="none"/><path d="M406 253 Q378 247 389 273" fill="none"/><path d="M366 286 Q349 264 340 291" fill="none"/><path d="M317 287 Q317 259 293 275" fill="none"/></g>
- <path d="M300 203 L 60 203" stroke="#1d4ed8" stroke-width="9"/>
- <path d="M300 185 L 60 185" stroke="#c1121f" stroke-width="7"/>
- <g fill="#1d2430">
-  <text x="570" y="50">Fibrous capsule</text><line x1="566" y1="46" x2="505" y2="72" stroke="#333"/>
-  <text x="570" y="100">Renal cortex (קליפה)</text><line x1="566" y1="96" x2="487" y2="130" stroke="#333"/>
-  <text x="570" y="150">Renal pyramid (לשד)</text><line x1="566" y1="146" x2="420" y2="148" stroke="#333"/>
-  <text x="570" y="200">Renal column (עמודה)</text><line x1="566" y1="196" x2="472" y2="167" stroke="#333"/>
-  <text x="570" y="250">Papilla → Minor calyx</text><line x1="566" y1="246" x2="406" y2="215" stroke="#333"/>
-  <text x="570" y="300">Major calyx</text><line x1="566" y1="296" x2="363" y2="234" stroke="#333"/>
-  <text x="570" y="350">Medullary rays (קרניים לשדיות)</text><line x1="566" y1="346" x2="415" y2="345" stroke="#333" stroke-dasharray="3 2"/>
-  <text x="20" y="177" fill="#c1121f" font-weight="bold">Renal artery</text>
-  <text x="20" y="217" fill="#1d4ed8" font-weight="bold">Renal vein</text>
-  <text x="20" y="315">Ureter (שופכן)</text>
-  <text x="100" y="265">Renal pelvis (אגן)</text>
-  <text x="160" y="60">Hilum (שער)</text><line x1="200" y1="66" x2="245" y2="140" stroke="#333"/>
- </g>
-</svg>
-<div class="cap">חתך קורונלי סכמטי. <b>קליפה</b> <i class="en">(Renal cortex)</i><span class="key">חובה</span> בהיקף ובעמודות בין הפירמידות; <b>לשד</b> <i class="en">(Renal medulla)</i><span class="key">חובה</span> בנוי מ-8–12 <i class="en">Renal pyramids</i> שקודקודן (<i class="en">papilla</i>) בולט אל <i class="en">minor calyx</i>. כמה גביעים קטנים מתאחדים ל-<i class="en">major calyx</i>, ואלה לאגן <i class="en">(renal pelvis)</i> ולשופכן.</div>
-</div>
+<h3>המבנה המאקרוסקופי: <i class="en">Cortex</i>, <i class="en">Medulla</i>, <i class="en">Pyramids</i> ו-<i class="en">Calyces</i></h3>
+<figure class="fig" style="max-width:900px;margin:12px auto"><img src="img/s-gross-kidney.jpg" alt="" style="height:auto;object-fit:contain"><figcaption><b>חתך קורונלי של הכליה (Junqueira):</b> <i class="en">Renal cortex</i><span class="key">חובה</span> בהיקף וב-<i class="en">Renal columns</i> בין ה-<i class="en">Pyramids</i>; <i class="en">Renal medulla</i><span class="key">חובה</span> = 8–12 <i class="en">Renal pyramids</i> שבסיסן ב-<i class="en">Corticomedullary junction</i> וקודקודן (<i class="en">Renal papilla</i>) בולט אל <i class="en">Minor calyx</i>. כמה <i class="en">Minor calyces</i> מתאחדים ל-<i class="en">Major calyx</i>, ואלה ל-<i class="en">Renal pelvis</i> ול-<i class="en">Ureter</i>. <i class="en">Renal lobe</i> = <i class="en">Pyramid</i> אחת + ה-<i class="en">Cortex</i> שמעליה. הכל עטוף ב-<i class="en">Fibrous capsule</i>, וכלי הדם נכנסים ב-<i class="en">Hilum</i>.<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
 
 <div class="grid2">
  <div class="box">
-  <h4>אונה ואונית <i class="en">Lobe / Lobule</i></h4>
+  <h4><i class="en">Lobe / Lobule</i></h4>
   <ul>
-   <li><b>אונה</b> <i class="en">(Renal lobe)</i> = פירמידה אחת + הקליפה שמעליה ומסביבה (חצי עמודה מכל צד).</li>
-   <li><b>אונית</b> <i class="en">(Renal lobule)</i> = <i class="en">medullary ray</i> אחת (צרור צינוריות ישרות שעולה מהלשד לתוך הקליפה) + ה-<i class="en">cortical labyrinth</i> שסביבה (גופיפים וצינוריות מפותלות). במרכז האונית עובר ה-<i class="en">collecting duct</i>.</li>
+   <li><b><i class="en">Lobe</i></b> <i class="en">(Renal lobe)</i> = <i class="en">Pyramid</i> אחת + ה-<i class="en">Cortex</i> שמעליה ומסביבה (חצי <i class="en">Renal column</i> מכל צד).</li>
+   <li><b><i class="en">Lobule</i></b> <i class="en">(Renal lobule)</i> = <i class="en">medullary ray</i> אחת (צרור צינוריות ישרות שעולה מ-<i class="en">Medulla</i> לתוך ה-<i class="en">Cortex</i>) + ה-<i class="en">cortical labyrinth</i> שסביבה (<i class="en">Renal corpuscles</i> וצינוריות מפותלות). במרכז ה-<i class="en">Lobule</i> עובר ה-<i class="en">collecting duct</i>.</li>
   </ul>
-  <div class="mem"><b class="t">אונה = פירמידה</b> (גדול, מאקרוסקופי). <b class="t">אונית = קרן</b> (קטן, מיקרוסקופי). "קרן" שומעים רק דרך המיקרוסקופ.</div>
+  <div class="mem"><b class="t"><i class="en">Lobe</i> = <i class="en">Pyramid</i></b> (גדול, מאקרוסקופי). <b class="t"><i class="en">Lobule</i> = קרן</b> (קטן, מיקרוסקופי). "קרן" שומעים רק דרך המיקרוסקופ.</div>
  </div>
  <div class="box">
-  <h4>איך מבדילים קליפה מלשד בחתך?</h4>
+  <h4>איך מבדילים <i class="en">Cortex</i> מ-<i class="en">Medulla</i> בחתך?</h4>
   <table>
-   <tr><th></th><th>קליפה <i class="en">Cortex</i></th><th>לשד <i class="en">Medulla</i></th></tr>
+   <tr><th></th><th><i class="en">Cortex</i></th><th><i class="en">Medulla</i></th></tr>
    <tr><td>גופיפי כליה</td><td><b>יש</b> (עיגולים גדולים)</td><td><b>אין לעולם</b></td></tr>
-   <tr><td>צינוריות</td><td>מפותלות, חתוכות לכל כיוון, PCT ורוד שולט</td><td>ישרות ומקבילות: לולאות הנלה, צינורות מאספים, <i class="en">vasa recta</i></td></tr>
+   <tr><td>צינוריות</td><td>מפותלות, חתוכות לכל כיוון, PCT ורוד שולט</td><td>ישרות ומקבילות: <i class="en">Loops of Henle</i>, <i class="en">Collecting ducts</i>, <i class="en">vasa recta</i></td></tr>
    <tr><td>מראה כללי</td><td>"סלט" צבעוני, צפוף</td><td>פסים, הרבה לומנים ריקים</td></tr>
   </table>
-  <div class="mem"><b class="t">אין גופיפים = לשד.</b> רואים גופיף אחד ויחיד בפינה? אתם עדיין בקליפה.</div>
+  <div class="mem"><b class="t">אין <i class="en">Renal corpuscles</i> = <i class="en">Medulla</i>.</b> רואים <i class="en">Renal corpuscle</i> אחד ויחיד בפינה? אתם עדיין ב-<i class="en">Cortex</i>.</div>
  </div>
 </div>
 
-<h3>הנפרון: היחידה התפקודית <span class="en">Nephron</span><span class="key">חובה</span></h3>
-<p>כ-1–1.5 מיליון נפרונים בכל כליה. נפרון = <i class="en">Renal corpuscle</i> + צינורית (<i class="en">PCT → Loop of Henle → DCT</i>). הצינוריות המקשרות <i class="en">(Connecting tubules)</i> של כמה נפרונים נשפכות ל-<i class="en">Collecting duct</i> משותף. עקרונית ה-CD הוא "מערכת מאספת" ולא חלק מהנפרון (מקורו עוברי שונה), אבל בשיעור מתייחסים אליו כהמשך הרצף.</p>
+<h3>ה-<i class="en">Nephron</i>: היחידה התפקודית <span class="en">Nephron</span><span class="key">חובה</span></h3>
+<p>כ-1–1.5 מיליון <i class="en">Nephrons</i> בכל כליה. <i class="en">Nephron</i> = <i class="en">Renal corpuscle</i> + צינורית (<i class="en">PCT → Loop of Henle → DCT</i>). הצינוריות המקשרות <i class="en">(Connecting tubules)</i> של כמה <i class="en">Nephrons</i> נשפכות ל-<i class="en">Collecting duct</i> משותף. עקרונית ה-CD הוא "מערכת מאספת" ולא חלק מ-<i class="en">Nephron</i> (מקורו עוברי שונה), אבל בשיעור מתייחסים אליו כהמשך הרצף.</p>
 <div class="box">
- <h4>שני סוגי נפרונים</h4>
+ <h4>שני סוגי <i class="en">Nephrons</i></h4>
  <table>
-  <tr><th></th><th>קורטיקלי <i class="en">Cortical</i> (הרוב, ~85%)</th><th>ג'וקסטה-מדולרי <i class="en">Juxtamedullary</i></th></tr>
-  <tr><td>מיקום הגופיף</td><td>קליפה חיצונית/אמצעית</td><td>קליפה, קרוב מאוד לגבול קליפה–לשד</td></tr>
-  <tr><td>לולאת הנלה</td><td>קצרה, <b>בלי</b> זרוע עולה דקה, לא נכנסת ללשד הפנימי</td><td>ארוכה, <b>עם</b> <i class="en">thin ascending limb</i>, נכנסת עמוק ללשד הפנימי</td></tr>
-  <tr><td>צינורית פרוקסימלית</td><td>ארוכה</td><td>קצרה יותר</td></tr>
-  <tr><td>הנימים אחרי העורקיק המוליך</td><td><i class="en">Peritubular capillaries</i></td><td><i class="en">Vasa recta</i> (יורדים ללשד במקביל ללולאה)</td></tr>
-  <tr><td>תפקיד מיוחד</td><td>ספיגה "שגרתית"</td><td>בניית מפל האוסמולריות בלשד → ריכוז שתן</td></tr>
+  <tr><th></th><th><i class="en">Cortical</i> (הרוב, ~85%)</th><th><i class="en">Juxtamedullary</i></th></tr>
+  <tr><td>מיקום ה-<i class="en">Renal corpuscle</i></td><td><i class="en">Cortex</i> חיצונית/אמצעית</td><td><i class="en">Cortex</i>, קרוב מאוד לגבול <i class="en">Cortex</i>–<i class="en">Medulla</i></td></tr>
+  <tr><td><i class="en">Loop of Henle</i></td><td>קצרה, <b>בלי</b> <i class="en">Thin ascending limb</i>, לא נכנסת ל-<i class="en">Medulla</i> הפנימי</td><td>ארוכה, <b>עם</b> <i class="en">thin ascending limb</i>, נכנסת עמוק ל-<i class="en">Medulla</i> הפנימי</td></tr>
+  <tr><td><i class="en">Proximal tubule</i></td><td>ארוכה</td><td>קצרה יותר</td></tr>
+  <tr><td>הנימים אחרי ה-<i class="en">Efferent arteriole</i></td><td><i class="en">Peritubular capillaries</i></td><td><i class="en">Vasa recta</i> (יורדים ל-<i class="en">Medulla</i> במקביל ללולאה)</td></tr>
+  <tr><td>תפקיד מיוחד</td><td>ספיגה "שגרתית"</td><td>בניית מפל האוסמולריות ב-<i class="en">Medulla</i> → ריכוז שתן</td></tr>
  </table>
- <div class="mem"><b class="t">ג'וקסטה = ג'ירפה:</b> צוואר (לולאה) ארוך שיורד עמוק. ובכל נפרון: הגופיף <b>תמיד</b> בקליפה, PCT ו-DCT כמעט תמיד בקליפה, ורק הלולאה ו-CD יורדים ללשד.</div>
+ <div class="mem"><b class="t">ג'וקסטה = ג'ירפה:</b> צוואר (לולאה) ארוך שיורד עמוק. ובכל <i class="en">Nephron</i>: ה-<i class="en">Renal corpuscle</i> <b>תמיד</b> ב-<i class="en">Cortex</i>, PCT ו-DCT כמעט תמיד ב-<i class="en">Cortex</i>, ורק הלולאה ו-CD יורדים ל-<i class="en">Medulla</i>.</div>
 </div>
 
 <div class="figs">
- <figure class="fig"><img src="img/s-netter-gross.jpg" alt=""><figcaption><b>חתך קורונלי (Netter):</b> קליפה, פירמידות הלשד, עמודות, פפילות, גביעים קטנים וגדולים, אגן ושופכן. שימו לב ל-<i class="en">medullary rays</i> שיוצאות מבסיס הפירמידה לתוך הקליפה.<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
- <figure class="fig"><img src="img/cortex-vs-medulla.jpg" alt=""><figcaption><b>קליפה (למעלה) לעומת לשד (למטה):</b> בקליפה גופיפים עגולים בין צינוריות; בלשד רק צינוריות מקבילות, בלי גופיפים.<span class="credit">חומרי הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-cortical-labyrinth-ray.jpg" alt=""><figcaption><b>לבירינת קליפתי וקרן לשדית:</b> הגופיפים (חצים) יושבים ב-<i class="en">cortical labyrinth</i>; באמצע עוברת <i class="en">medullary ray</i> של צינוריות ישרות (PST, TAL, CD). CT = <i class="en">connecting tubule</i>.<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
- <figure class="fig"><img src="img/s-nephron-cortex-medulla.jpg" alt=""><figcaption><b>נפרון בתוך קליפה ולשד:</b> הגופיף וה-PCT/DCT בקליפה; הלולאה יורדת ללשד; ה-CD יורד לאורך כל הלשד.<span class="credit">מצגת הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-netter-nephron-segments.jpg" alt=""><figcaption><b>מקרא צבעים של הנפרון (Netter):</b> שימו לב לגבולות האזורים: קליפה, לשד חיצוני (פס חיצוני ופנימי), לשד פנימי, ומי נמצא בכל אזור.<span class="credit">מצגת הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/vascular-distribution.jpg" alt=""><figcaption><b>נפרון ג'וקסטה-מדולרי (שמאל) לעומת קורטיקלי (ימין):</b> לולאה ארוכה עם <i class="en">vasa recta</i> לעומת לולאה קצרה עם נימים פריטובולריים.<span class="credit">חומרי הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-filtration-secretion-reabsorption.jpg" alt=""><figcaption><b>שלושת התהליכים:</b> 1 סינון בגופיף, 2 הפרשה מהנימים לצינורית, 3 ספיגה חוזרת מהצינורית לנימים. שתן = מסונן − נספג + מופרש.<span class="credit">מצגת הקורס / Vander</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-netter-gross.jpg" alt=""><figcaption><b>חתך קורונלי (Netter):</b> <i class="en">Cortex</i>, <i class="en">Renal pyramids</i>, <i class="en">Renal columns</i>, <i class="en">Papillae</i>, <i class="en">Minor calyces</i>, <i class="en">Major calyces</i>, <i class="en">Renal pelvis</i> ו-<i class="en">Ureter</i>. שימו לב ל-<i class="en">medullary rays</i> שיוצאות מבסיס ה-<i class="en">Pyramid</i> לתוך ה-<i class="en">Cortex</i>.<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
+ <figure class="fig"><img src="img/cortex-vs-medulla.jpg" alt=""><figcaption><b><i class="en">Cortex</i> (למעלה) לעומת <i class="en">Medulla</i> (למטה):</b> ב-<i class="en">Cortex</i> <i class="en">Renal corpuscles</i> עגולים בין צינוריות; ב-<i class="en">Medulla</i> רק צינוריות מקבילות, בלי <i class="en">Renal corpuscles</i>.<span class="credit">חומרי הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-cortical-labyrinth-ray.jpg" alt=""><figcaption><b><i class="en">Labyrinth</i> <i class="en">Cortical</i> ו-<i class="en">Medullary ray</i>:</b> ה-<i class="en">Renal corpuscles</i> (חצים) יושבים ב-<i class="en">cortical labyrinth</i>; באמצע עוברת <i class="en">medullary ray</i> של צינוריות ישרות (PST, TAL, CD). CT = <i class="en">connecting tubule</i>.<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-nephron-cortex-medulla.jpg" alt=""><figcaption><b><i class="en">Nephron</i> בתוך <i class="en">Cortex</i> ו-<i class="en">Medulla</i>:</b> ה-<i class="en">Renal corpuscle</i> וה-PCT/DCT ב-<i class="en">Cortex</i>; הלולאה יורדת ל-<i class="en">Medulla</i>; ה-CD יורד לאורך כל ה-<i class="en">Medulla</i>.<span class="credit">מצגת הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-netter-nephron-segments.jpg" alt=""><figcaption><b>מקרא צבעים של ה-<i class="en">Nephron</i> (Netter):</b> שימו לב לגבולות האזורים: <i class="en">Cortex</i>, <i class="en">Medulla</i> חיצוני (פס חיצוני ופנימי), <i class="en">Medulla</i> פנימי, ומי נמצא בכל אזור.<span class="credit">מצגת הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/vascular-distribution.jpg" alt=""><figcaption><b><i class="en">Nephron</i> <i class="en">Juxtamedullary</i> (שמאל) לעומת <i class="en">Cortical</i> (ימין):</b> לולאה ארוכה עם <i class="en">vasa recta</i> לעומת לולאה קצרה עם <i class="en">Peritubular capillaries</i>.<span class="credit">חומרי הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-filtration-secretion-reabsorption.jpg" alt=""><figcaption><b>שלושת התהליכים:</b> 1 סינון ב-<i class="en">Renal corpuscle</i>, 2 הפרשה מהנימים לצינורית, 3 ספיגה חוזרת מהצינורית לנימים. שתן = מסונן − נספג + מופרש.<span class="credit">מצגת הקורס / Vander</span></figcaption></figure>
 </div>
 </section>
 
 <!-- ============================================================ -->
 <section id="journey">
-<h2>2. המסע של השתן: מהעורקיק המביא ועד השופכה <span class="en">The journey, station by station</span></h2>
+<h2>2. המסע של השתן: מ-<i class="en">Afferent arteriole</i> ועד ה-<i class="en">Urethra</i> <span class="en">The journey, station by station</span></h2>
 <p>זה הלב של הסיכום. הדיאגרמה מציגה את כל הדרך בצבעי אפיתל, ומתחתיה כרטיס לכל תחנה. מספרי התחנות זהים בדיאגרמה ובכרטיסים.</p>
 
 <div class="legend">
- <span style="--c:var(--sq)">אפיתל קשקשי פשוט <i class="en plain">Simple squamous</i></span>
- <span style="--c:var(--brush)">קובואידלי פשוט עם גבול מברשת <i class="en plain">Simple cuboidal + brush border</i></span>
- <span style="--c:var(--cub)">קובואידלי פשוט בלי מברשת <i class="en plain">Simple cuboidal</i></span>
- <span style="--c:var(--col)">קובואידלי → גלילי <i class="en plain">Cuboidal → columnar</i></span>
- <span style="--c:var(--uro)">אפיתל מעבר <i class="en plain">Urothelium</i></span>
- <span style="--c:var(--strat)">רב-שכבתי גלילי / קשקשי <i class="en plain">Stratified</i></span>
+ <span style="--c:var(--sq)">אפיתל <i class="en">Simple squamous</i> <i class="en plain">Simple squamous</i></span>
+ <span style="--c:var(--brush)"><i class="en">Simple cuboidal</i> עם <i class="en">Brush border</i> <i class="en plain">Simple cuboidal + brush border</i></span>
+ <span style="--c:var(--cub)"><i class="en">Simple cuboidal</i> בלי <i class="en">Brush border</i> <i class="en plain">Simple cuboidal</i></span>
+ <span style="--c:var(--col)"><i class="en">Cuboidal</i> → <i class="en">Columnar</i> <i class="en plain">Cuboidal → columnar</i></span>
+ <span style="--c:var(--uro)"><i class="en">Urothelium</i> <i class="en plain">Urothelium</i></span>
+ <span style="--c:var(--strat)"><i class="en">Stratified columnar</i> / <i class="en">Squamous</i> <i class="en plain">Stratified</i></span>
 </div>
 
 <div class="diagram">
@@ -245,9 +218,9 @@ summary{cursor:pointer;font-weight:600;font-size:16px}
  <rect x="0" y="320" width="900" height="130" fill="#efc7b5"/>
  <rect x="0" y="450" width="900" height="110" fill="#fff4cc"/>
  <g fill="#7a4b3a" font-weight="bold" font-size="13">
-  <text x="880" y="20" text-anchor="end">CORTEX  קליפה</text>
-  <text x="880" y="210" text-anchor="end">OUTER MEDULLA  לשד חיצוני</text>
-  <text x="880" y="340" text-anchor="end">INNER MEDULLA  לשד פנימי</text>
+  <text x="880" y="20" text-anchor="end">CORTEX</text>
+  <text x="880" y="210" text-anchor="end">OUTER MEDULLA</text>
+  <text x="880" y="340" text-anchor="end">INNER MEDULLA</text>
   <text x="20" y="470" fill="#7a6414">PAPILLA → CALYX → PELVIS → URETER → BLADDER → URETHRA</text>
  </g>
  <!-- afferent arteriole -->
@@ -329,127 +302,127 @@ summary{cursor:pointer;font-weight:600;font-size:16px}
  <path d="M560 240 L 560 280" stroke="#555" stroke-width="2" marker-end="url(#ar)"/>
  <path d="M660 500 L 690 500" stroke="#fff" stroke-width="2" marker-end="url(#ar)" opacity=".9"/>
 </svg>
-<div class="cap">מפת "רכבת תחתית" של מערכת השתן. צבע הקו = סוג האפיתל. שימו לב: האפיתל מתחלף בכל פעם שהתפקיד מתחלף: קשקשי במקום שבו צריך <b>מעבר פסיבי</b> (קופסית, זרועות דקות), קובואידלי עם מיטוכונדריות במקום שבו צריך <b>הובלה פעילה</b> (PCT, TAL, DCT), ואפיתל מעבר עמיד במקום שבו צריך <b>מחסום</b> בפני שתן היפרטוני (מהגביע ועד השלפוחית).</div>
+<div class="cap">מפת "רכבת תחתית" של מערכת השתן. צבע הקו = סוג האפיתל. שימו לב: האפיתל מתחלף בכל פעם שהתפקיד מתחלף: <i class="en">Squamous</i> במקום שבו צריך <b>מעבר פסיבי</b> (<i class="en">Bowman's capsule</i>, <i class="en">Thin limbs</i>), <i class="en">Cuboidal</i> עם <i class="en">Mitochondria</i> במקום שבו צריך <b>הובלה פעילה</b> (PCT, TAL, DCT), ו-<i class="en">Urothelium</i> עמיד במקום שבו צריך <b>מחסום</b> בפני שתן היפרטוני (מ-<i class="en">Calyx</i> ועד ה-<i class="en">Bladder</i>).</div>
 </div>
 
 <div class="stations">
 
 <div class="st" style="--c:#c1121f">
- <h4>עורקיק מביא ← גלומרולוס <i class="en">Afferent arteriole → Glomerulus</i><span class="key">חובה</span> <span class="where">קליפה · קוטב כלי הדם</span></h4>
- <p class="id">הדם נכנס לגופיף ב-<i class="en">Vascular pole</i> דרך העורקיק המביא, עובר בפקעת הנימים (<i class="en">Glomerulus</i> = נימים <i class="en">fenestrated</i>) ויוצא דרך <i class="en">Efferent arteriole</i> <b>באותו קוטב</b>. העורקיק המביא רחב יותר מהמוליך, ולכן הלחץ בנימים גבוה (~60 ממ"כ) ודוחף סינון. בדופן העורקיק המביא יושבים תאי ה-<i class="en">JG</i> מפרישי הרנין (תחנה 8).</p>
+ <h4><i class="en">Afferent arteriole → Glomerulus</i><span class="key">חובה</span> <span class="where"><i class="en">Cortex</i> · <i class="en">Vascular pole</i></span></h4>
+ <p class="id">הדם נכנס ל-<i class="en">Renal corpuscle</i> ב-<i class="en">Vascular pole</i> דרך ה-<i class="en">Afferent arteriole</i>, עובר בפקעת הנימים (<i class="en">Glomerulus</i> = נימים <i class="en">fenestrated</i>) ויוצא דרך <i class="en">Efferent arteriole</i> <b>באותו קוטב</b>. ה-<i class="en">Afferent arteriole</i> רחב יותר מהמוליך, ולכן הלחץ בנימים גבוה (~60 ממ"כ) ודוחף סינון. בדופן ה-<i class="en">Afferent arteriole</i> יושבים תאי ה-<i class="en">JG</i> מפרישי ה-<i class="en">Renin</i> (תחנה 8).</p>
 </div>
 
 <div class="st" style="--c:#7fb3d5">
- <h4>גופיף הכליה וקופסית באומן <i class="en">Renal corpuscle · Bowman's capsule</i><span class="key">חובה</span> <span class="where">קליפה בלבד</span> <span class="epi">פריאטלי: קשקשי פשוט · ויסצרלי: פודוציטים</span></h4>
+ <h4><i class="en">Renal corpuscle · Bowman's capsule</i><span class="key">חובה</span> <span class="where"><i class="en">Cortex</i> בלבד</span> <span class="epi">פריאטלי: <i class="en">Simple squamous</i> · ויסצרלי: <i class="en">Podocytes</i></span></h4>
  <ul class="id">
-  <li><b>מה רואים:</b> עיגול בקוטר ~200 מיקרון; בפנים פקעת נימים עמוסה בגרעינים (אנדותל + פודוציטים + מזנגיום) ו-RBC; סביבה חלל בהיר = <i class="en">Bowman's (urinary) space</i>; ומבחוץ שורת גרעינים שטוחים = <i class="en">Parietal layer</i>.</li>
-  <li><b>תפקיד:</b> סינון 180 ליטר/יום של תסנין "פלזמה בלי חלבונים גדולים". פירוט מחסום הסינון בפרק 3.</li>
-  <li><b>קוטב השתן</b> <i class="en">(Urinary/tubular pole)</i>: בצד הנגדי לקוטב כלי הדם; שם האפיתל הקשקשי הפריאטלי הופך בבת אחת לקובואידלי עם מברשת, כלומר ל-PCT.</li>
+  <li><b>מה רואים:</b> עיגול בקוטר ~200 מיקרון; בפנים פקעת נימים עמוסה בגרעינים (<i class="en">Endothelium</i> + <i class="en">Podocytes</i> + <i class="en">Mesangium</i>) ו-RBC; סביבה חלל בהיר = <i class="en">Bowman's (urinary) space</i>; ומבחוץ שורת גרעינים שטוחים = <i class="en">Parietal layer</i>.</li>
+  <li><b>תפקיד:</b> סינון 180 ליטר/יום של <i class="en">Filtrate</i> "פלזמה בלי חלבונים גדולים". פירוט <i class="en">Filtration barrier</i> בפרק 3.</li>
+  <li><b><i class="en">Urinary pole</i></b> <i class="en">(Urinary/tubular pole)</i>: בצד הנגדי ל-<i class="en">Vascular pole</i>; שם האפיתל ה-<i class="en">Squamous</i> הפריאטלי הופך בבת אחת ל-<i class="en">Cuboidal</i> עם <i class="en">Brush border</i>, כלומר ל-PCT.</li>
  </ul>
 </div>
 
 <div class="st" style="--c:#e76f51">
- <h4>צינורית מפותלת קרובה <i class="en">Proximal convoluted tubule (PCT)</i><span class="key">חובה</span> <span class="where">קליפה · רוב שטח הקליפה</span> <span class="epi">קובואידלי פשוט + גבול מברשת</span></h4>
+ <h4><i class="en">Proximal convoluted tubule (PCT)</i><span class="key">חובה</span> <span class="where"><i class="en">Cortex</i> · רוב שטח ה-<i class="en">Cortex</i></span> <span class="epi"><i class="en">Simple cuboidal</i> + <i class="en">Brush border</i></span></h4>
  <ul class="id">
-  <li><b>איך מזהים:</b> ציטופלסמה <b>ורודה-אדומה מאוד</b> (אצידופילית, מלאה מיטוכונדריות); לומן <b>"מלא פלומה"</b> או סתום (מיקרו-וילי ארוכים = <i class="en">Brush border</i>); <b>מעט גרעינים</b> בחתך רוחב (3–5), כי התאים גדולים; גבולות תאים לא ברורים (אינטרדיגיטציות).</li>
-  <li><b>תפקיד = "תחנת הכוח" של הכליה:</b> סופגת 2/3 מהמים, Na⁺ ו-Cl⁻; <b>100%</b> מהגלוקוז וחומצות האמינו; רוב ה-HCO₃⁻, K⁺, Ca²⁺; חלבונים קטנים באנדוציטוזה (בועיות אפיקליות + ליזוזומים). מפרישה קריאטינין, חומצת שתן ותרופות (אניונים/קטיונים אורגניים).</li>
-  <li><b>בונוס:</b> הידרוקסילציה של ויטמין D; תאי אינטרסטיציום (פיברובלסטים) ליד ה-PCT מייצרים <i class="en">Erythropoietin</i>. הקליפה היא אתר צריכת החמצן המקסימלית בכליה.</li>
+  <li><b>איך מזהים:</b> ציטופלסמה <b>ורודה-אדומה מאוד</b> (אצידופילית, מלאה <i class="en">Mitochondria</i>); לומן <b>"מלא פלומה"</b> או סתום (<i class="en">Microvilli</i> ארוכים = <i class="en">Brush border</i>); <b>מעט גרעינים</b> בחתך רוחב (3–5), כי התאים גדולים; גבולות תאים לא ברורים (אינטרדיגיטציות).</li>
+  <li><b>תפקיד = "תחנת הכוח" של הכליה:</b> סופגת 2/3 מהמים, Na⁺ ו-Cl⁻; <b>100%</b> מהגלוקוז וחומצות האמינו; רוב ה-HCO₃⁻, K⁺, Ca²⁺; חלבונים קטנים באנדוציטוזה (בועיות אפיקליות + <i class="en">Lysosomes</i>). מפרישה קריאטינין, חומצת שתן ותרופות (אניונים/קטיונים אורגניים).</li>
+  <li><b>בונוס:</b> הידרוקסילציה של ויטמין D; תאי <i class="en">Interstitium</i> (פיברובלסטים) ליד ה-PCT מייצרים <i class="en">Erythropoietin</i>. ה-<i class="en">Cortex</i> היא אתר צריכת החמצן המקסימלית בכליה.</li>
  </ul>
  <div class="mem"><b class="t">P = Pink, Plush, Paucity of nuclei, Plugged lumen.</b> בעברית: <b>קרובה = קרובה לסגירה</b> (הלומן סתום).</div>
 </div>
 
 <div class="st" style="--c:#e76f51">
- <h4>צינורית פרוקסימלית ישרה <i class="en">Proximal straight tubule (PST) = thick descending limb</i> <span class="where">קרן לשדית / לשד חיצוני</span> <span class="epi">כמו PCT</span></h4>
- <p class="id">אותו אפיתל כמו PCT (ורוד, מברשת, מעט גרעינים) אבל <b>ישר</b> ומקביל לשכניו. זה החלק הראשון של לולאת הנלה. בקרן הלשדית הוא יושב לצד TAL ו-CD, וההבדל ביניהם הוא שאלת בוחן קלאסית (פרק 4).</p>
+ <h4><i class="en">Proximal straight tubule (PST) = thick descending limb</i> <span class="where"><i class="en">Medullary ray</i> / <i class="en">Medulla</i> חיצוני</span> <span class="epi">כמו PCT</span></h4>
+ <p class="id">אותו אפיתל כמו PCT (ורוד, <i class="en">Brush border</i>, מעט גרעינים) אבל <b>ישר</b> ומקביל לשכניו. זה החלק הראשון של <i class="en">Loop of Henle</i>. ב-<i class="en">Medullary ray</i> הוא יושב לצד TAL ו-CD, וההבדל ביניהם הוא שאלת בוחן קלאסית (פרק 4).</p>
 </div>
 
 <div class="st" style="--c:#7fb3d5">
- <h4>זרוע יורדת דקה <i class="en">Thin descending limb</i> <span class="where">לשד</span> <span class="epi">קשקשי פשוט</span></h4>
+ <h4><i class="en">Thin descending limb</i> <span class="where"><i class="en">Medulla</i></span> <span class="epi"><i class="en">Simple squamous</i></span></h4>
  <ul class="id">
-  <li><b>איך מזהים:</b> צינורית בקוטר קטן (~15 מיקרון), דופן דקיקה עם גרעינים שטוחים שבולטים ללומן, לומן <b>ריק</b>. נראית כמעט כמו נים. מעט מיטוכונדריות.</li>
-  <li><b>תפקיד:</b> חדירה למים (יוצאים אל הלשד ההיפרטוני), ספיגה פסיבית של NaCl. התסנין מתרכז ככל שיורדים.</li>
+  <li><b>איך מזהים:</b> צינורית בקוטר קטן (~15 מיקרון), דופן דקיקה עם גרעינים שטוחים שבולטים ללומן, לומן <b>ריק</b>. נראית כמעט כמו נים. מעט <i class="en">Mitochondria</i>.</li>
+  <li><b>תפקיד:</b> חדירה למים (יוצאים אל ה-<i class="en">Medulla</i> ההיפרטוני), ספיגה פסיבית של NaCl. ה-<i class="en">Filtrate</i> מתרכז ככל שיורדים.</li>
  </ul>
- <div class="mem"><b class="t">זרוע דקה או כלי דם?</b> אם יש כדוריות אדומות בלומן, זה כלי (<i class="en">vasa recta</i>). גרעיני האנדותל גם שטוחים יותר.</div>
+ <div class="mem"><b class="t"><i class="en">Thin limb</i> או כלי דם?</b> אם יש כדוריות אדומות בלומן, זה כלי (<i class="en">vasa recta</i>). גרעיני ה-<i class="en">Endothelium</i> גם שטוחים יותר.</div>
 </div>
 
 <div class="st" style="--c:#7fb3d5">
- <h4>זרוע עולה דקה <i class="en">Thin ascending limb</i> <span class="where">לשד פנימי · רק בנפרונים ג'וקסטה-מדולריים</span> <span class="epi">קשקשי פשוט</span></h4>
- <p class="id">זהה היסטולוגית לזרוע היורדת (בחתך רגיל אי אפשר להבדיל). תפקודית: <b>אטומה למים</b>, NaCl יוצא פסיבית. קיימת רק בלולאות הארוכות.</p>
+ <h4><i class="en">Thin ascending limb</i> <span class="where"><i class="en">Medulla</i> פנימי · רק ב-<i class="en">Nephrons</i> <i class="en">Juxtamedullary</i></span> <span class="epi"><i class="en">Simple squamous</i></span></h4>
+ <p class="id">זהה היסטולוגית ל-<i class="en">Descending limb</i> (בחתך רגיל אי אפשר להבדיל). תפקודית: <b>אטומה למים</b>, NaCl יוצא פסיבית. קיימת רק בלולאות הארוכות.</p>
 </div>
 
 <div class="st" style="--c:#f4a261">
- <h4>זרוע עולה עבה <i class="en">Thick ascending limb (TAL)</i> <span class="where">לשד חיצוני → קרן לשדית → קליפה</span> <span class="epi">קובואידלי פשוט, בלי מברשת</span></h4>
+ <h4><i class="en">Thick ascending limb (TAL)</i> <span class="where"><i class="en">Medulla</i> חיצוני → <i class="en">Medullary ray</i> → <i class="en">Cortex</i></span> <span class="epi"><i class="en">Simple cuboidal</i>, בלי <i class="en">Brush border</i></span></h4>
  <ul class="id">
-  <li><b>איך מזהים:</b> תאים קובואידליים נמוכים, <b>בלי גבול מברשת</b> (לומן חלק ונקי), הרבה מיטוכונדריות (עדיין די אצידופילי, אבל פחות מ-PCT), <b>יותר גרעינים</b> בחתך מ-PST.</li>
-  <li><b>תפקיד:</b> שאיבה <b>אקטיבית</b> של Na⁺ (ו-K⁺, Cl⁻) החוצה בעוד הדופן <b>אטומה למים</b>. התוצאה: התסנין <b>מדולל</b> והאינטרסטיציום של הלשד נעשה <b>היפרטוני</b> (מפל אוסמולריות לשד &gt; קליפה), שנשמר בעזרת ה-<i class="en">vasa recta</i>. זה המנוע של ריכוז השתן.</li>
-  <li>מסתיימת ב-<i class="en">Macula densa</i> ליד הגופיף שממנו יצאה.</li>
+  <li><b>איך מזהים:</b> תאים <i class="en">Cuboidal</i> נמוכים, <b>בלי <i class="en">Brush border</i></b> (לומן חלק ונקי), הרבה <i class="en">Mitochondria</i> (עדיין די אצידופילי, אבל פחות מ-PCT), <b>יותר גרעינים</b> בחתך מ-PST.</li>
+  <li><b>תפקיד:</b> שאיבה <b>אקטיבית</b> של Na⁺ (ו-K⁺, Cl⁻) החוצה בעוד הדופן <b>אטומה למים</b>. התוצאה: ה-<i class="en">Filtrate</i> <b>מדולל</b> ו-<i class="en">Interstitium</i> של ה-<i class="en">Medulla</i> נעשה <b>היפרטוני</b> (מפל אוסמולריות <i class="en">Medulla</i> &gt; <i class="en">Cortex</i>), שנשמר בעזרת ה-<i class="en">vasa recta</i>. זה המנוע של ריכוז השתן.</li>
+  <li>מסתיימת ב-<i class="en">Macula densa</i> ליד ה-<i class="en">Renal corpuscle</i> שממנו יצאה.</li>
  </ul>
 </div>
 
 <div class="st" style="--c:#b5651d">
- <h4>מקולה דנסה <i class="en">Macula densa</i><span class="key">חובה</span> <span class="where">קוטב כלי הדם של הגופיף · תחילת ה-DCT</span> <span class="epi">תאים גליליים צפופים</span></h4>
- <p class="id">כתם של תאים <b>גבוהים, צרים וצפופים</b> (גרעינים "דחוסים" זה לזה, מכאן השם) בדופן הצינורית הדיסטלית, בדיוק במקום שבו היא נוגעת בעורקיק המביא. חיישן של זרימה ו-Na⁺ בלומן. חלק מה-JGA (פרק 5).</p>
+ <h4><i class="en">Macula densa</i><span class="key">חובה</span> <span class="where"><i class="en">Vascular pole</i> של ה-<i class="en">Renal corpuscle</i> · תחילת ה-DCT</span> <span class="epi">תאים <i class="en">Columnar</i> צפופים</span></h4>
+ <p class="id">כתם של תאים <b>גבוהים, צרים וצפופים</b> (גרעינים "דחוסים" זה לזה, מכאן השם) בדופן ה-<i class="en">Distal tubule</i>, בדיוק במקום שבו היא נוגעת ב-<i class="en">Afferent arteriole</i>. חיישן של זרימה ו-Na⁺ בלומן. חלק מה-JGA (פרק 5).</p>
 </div>
 
 <div class="st" style="--c:#f4a261">
- <h4>צינורית מפותלת רחוקה <i class="en">Distal convoluted tubule (DCT)</i><span class="key">חובה</span> <span class="where">קליפה · ליד "הגופיף שלה"</span> <span class="epi">קובואידלי פשוט, בלי מברשת</span></h4>
+ <h4><i class="en">Distal convoluted tubule (DCT)</i><span class="key">חובה</span> <span class="where"><i class="en">Cortex</i> · ליד "ה-<i class="en">Renal corpuscle</i> שלה"</span> <span class="epi"><i class="en">Simple cuboidal</i>, בלי <i class="en">Brush border</i></span></h4>
  <ul class="id">
-  <li><b>איך מזהים (לעומת PCT):</b> תאים <b>קטנים ונמוכים יותר</b>; <b>בלי מברשת</b>; לומן <b>פתוח וריק</b>; ציטופלסמה <b>חיוורת</b> יותר (פחות מיטוכונדריות); <b>הרבה יותר גרעינים</b> בחתך (6–8); גבולות תאים ברורים יותר. בקליפה DCT הן מיעוט (קצרות) לעומת שפע PCT.</li>
-  <li><b>תפקיד:</b> ספיגת מעט Na⁺ נוסף ואלקטרוליטים (Ca²⁺ בהשפעת PTH); בחלקה השני מופיעים כבר תאים עיקריים ומשולבים.</li>
+  <li><b>איך מזהים (לעומת PCT):</b> תאים <b>קטנים ונמוכים יותר</b>; <b>בלי <i class="en">Brush border</i></b>; לומן <b>פתוח וריק</b>; ציטופלסמה <b>חיוורת</b> יותר (פחות <i class="en">Mitochondria</i>); <b>הרבה יותר גרעינים</b> בחתך (6–8); גבולות תאים ברורים יותר. ב-<i class="en">Cortex</i> DCT הן מיעוט (קצרות) לעומת שפע PCT.</li>
+  <li><b>תפקיד:</b> ספיגת מעט Na⁺ נוסף ואלקטרוליטים (Ca²⁺ בהשפעת PTH); בחלקה השני מופיעים כבר <i class="en">Principal cells</i> ומשולבים.</li>
  </ul>
  <div class="mem"><b class="t">D = Distinct lumen, Dense nuclei, Duller color.</b> בעברית: <b>רחוקה = רחבה ופתוחה</b>. הכלל "התשובה בגרעינים": הרבה גרעינים בחתך = DCT; מעט = PCT.</div>
 </div>
 
 <div class="st" style="--c:#9b5de5">
- <h4>צינורית מקשרת וצינור מאסף קליפתי <i class="en">Connecting tubule → Cortical collecting duct</i><span class="key">חובה</span> <span class="where">קרן לשדית</span> <span class="epi">קובואידלי פשוט · תאים עיקריים + משולבים</span></h4>
+ <h4><i class="en">Connecting tubule → Cortical collecting duct</i><span class="key">חובה</span> <span class="where"><i class="en">Medullary ray</i></span> <span class="epi"><i class="en">Simple cuboidal</i> · <i class="en">Principal cells</i> + משולבים</span></h4>
  <ul class="id">
-  <li>כמה צינוריות מקשרות מצטרפות בקרן הלשדית ל-CD אחד. האפיתל קובואידלי, <b>חיוור</b>, עם <b>גבולות תאים חדים</b> (כמו אריחים), ולומן נקי. תאים כהים ספורים ביניהם = <i class="en">Intercalated cells</i>.</li>
-  <li><b>תפקיד:</b> כוונון עדין של Na⁺/K⁺ (אלדוסטרון), מים (ADH) ו-pH (תאים משולבים). פירוט בפרק 6.</li>
+  <li>כמה <i class="en">Connecting tubules</i> מצטרפות ב-<i class="en">Medullary ray</i> ל-CD אחד. האפיתל <i class="en">Cuboidal</i>, <b>חיוור</b>, עם <b>גבולות תאים חדים</b> (כמו אריחים), ולומן נקי. תאים כהים ספורים ביניהם = <i class="en">Intercalated cells</i>.</li>
+  <li><b>תפקיד:</b> כוונון עדין של Na⁺/K⁺ (<i class="en">Aldosterone</i>), מים (ADH) ו-pH (<i class="en">Intercalated cells</i>). פירוט בפרק 6.</li>
  </ul>
 </div>
 
 <div class="st" style="--c:#9b5de5">
- <h4>צינור מאסף לשדי <i class="en">Medullary collecting duct</i> <span class="where">לשד · במקביל ללולאות ול-vasa recta</span> <span class="epi">קובואידלי → גלילי</span></h4>
+ <h4><i class="en">Medullary collecting duct</i> <span class="where"><i class="en">Medulla</i> · במקביל ללולאות ול-vasa recta</span> <span class="epi"><i class="en">Cuboidal</i> → <i class="en">Columnar</i></span></h4>
  <ul class="id">
-  <li>הצינורות מתאחדים ומתרחבים ככל שיורדים (עד 200 מיקרון), התאים נעשים <b>גליליים</b> ויותר חיוורים. אלה הצינורות הכי גדולים והכי "נקיים" בלשד.</li>
-  <li><b>תפקיד:</b> <b>אתר ספיגת המים האחרון</b>: בנוכחות ADH נפתחים <i class="en">Aquaporin-2</i> בתאים העיקריים, המים בורחים אל האינטרסטיציום ההיפרטוני ואל ה-vasa recta, והשתן מתרכז. ה-CD של הלשד הפנימי גם מווסת הפרשת אוריאה.</li>
+  <li>הצינורות מתאחדים ומתרחבים ככל שיורדים (עד 200 מיקרון), התאים נעשים <b><i class="en">Columnar</i></b> ויותר חיוורים. אלה הצינורות הכי גדולים והכי "נקיים" ב-<i class="en">Medulla</i>.</li>
+  <li><b>תפקיד:</b> <b>אתר ספיגת המים האחרון</b>: בנוכחות ADH נפתחים <i class="en">Aquaporin-2</i> בתאים העיקריים, המים בורחים אל ה-<i class="en">Interstitium</i> ההיפרטוני ואל ה-vasa recta, והשתן מתרכז. ה-CD של ה-<i class="en">Medulla</i> הפנימי גם מווסת הפרשת אוריאה.</li>
  </ul>
 </div>
 
 <div class="st" style="--c:#2a9d8f">
- <h4>צינור פפילרי ← גביע קטן <i class="en">Papillary duct (of Bellini) → Area cribrosa → Minor calyx</i> <span class="where">קודקוד הפירמידה</span> <span class="epi">גלילי ← אפיתל מעבר</span></h4>
- <p class="id">בפפילה כמה CD לשדיים מתאחדים ל-<i class="en">papillary duct</i> שנפתח ישירות אל הגביע הקטן דרך חורים בקודקוד (<i class="en">area cribrosa</i>). <b>כאן מתחלף האפיתל</b>: גלילי פשוט של ה-CD הופך ל-<i class="en">Urothelium</i> המצפה את הגביע. מכאן והלאה הנוזל נקרא שתן, והרכבו לא משתנה יותר.</p>
+ <h4><i class="en">Papillary duct</i> ← <i class="en">Papillary duct (of Bellini) → Area cribrosa → Minor calyx</i> <span class="where">קודקוד ה-<i class="en">Pyramid</i></span> <span class="epi"><i class="en">Columnar</i> ← <i class="en">Urothelium</i></span></h4>
+ <p class="id">ב-<i class="en">Papilla</i> כמה CD <i class="en">Medullary</i> מתאחדים ל-<i class="en">papillary duct</i> שנפתח ישירות אל <i class="en">Minor calyx</i> דרך חורים בקודקוד (<i class="en">area cribrosa</i>). <b>כאן מתחלף האפיתל</b>: <i class="en">Simple columnar</i> של ה-CD הופך ל-<i class="en">Urothelium</i> המצפה את ה-<i class="en">Calyx</i>. מכאן והלאה הנוזל נקרא שתן, והרכבו לא משתנה יותר.</p>
 </div>
 
 <div class="st" style="--c:#2a9d8f">
- <h4>גביעים ואגן הכליה <i class="en">Minor → Major calyces → Renal pelvis</i> <span class="where">סינוס הכליה</span> <span class="epi">אפיתל מעבר</span></h4>
- <p class="id">דופן דקה: אורותל (2–3 שכבות), <i class="en">lamina propria</i>, מעט שריר חלק (שמתחיל גלי פריסטלטיקה) ואדוונטיציה. הסינוס מלא שומן.</p>
+ <h4><i class="en">Minor → Major calyces → Renal pelvis</i> <span class="where"><i class="en">Renal sinus</i></span> <span class="epi"><i class="en">Urothelium</i></span></h4>
+ <p class="id">דופן דקה: <i class="en">Urothelium</i> (2–3 שכבות), <i class="en">lamina propria</i>, מעט <i class="en">Smooth muscle</i> (שמתחיל גלי פריסטלטיקה) ו-<i class="en">Adventitia</i>. הסינוס מלא שומן.</p>
 </div>
 
 <div class="st" style="--c:#2a9d8f">
- <h4>שופכן <i class="en">Ureter</i> <span class="where">רטרופריטונאלי, 25–30 ס"מ</span> <span class="epi">אפיתל מעבר</span></h4>
+ <h4><i class="en">Ureter</i> <span class="where">רטרופריטונאלי, 25–30 ס"מ</span> <span class="epi"><i class="en">Urothelium</i></span></h4>
  <ul class="id">
-  <li><b>איך מזהים:</b> חתך רוחב עגול קטן עם <b>לומן בצורת כוכב</b> (המוקוזה מקופלת כשהשופכן ריק), אורותל 4–5 שכבות, <i class="en">lamina propria</i>, <b>שריר חלק בשתי שכבות</b> (פנימית אורכית, חיצונית היקפית; בשליש התחתון נוספת שכבה אורכית חיצונית) ואדוונטיציה. <b>אין סאב-מוקוזה.</b></li>
-  <li><b>תפקיד:</b> פריסטלטיקה שדוחפת שתן לשלפוחית. נכנס לדופן השלפוחית <b>באלכסון</b>, מה שיוצר שסתום נגד זרימה חוזרת.</li>
+  <li><b>איך מזהים:</b> חתך רוחב עגול קטן עם <b>לומן בצורת כוכב</b> (ה-<i class="en">Mucosa</i> מקופלת כש-<i class="en">Ureter</i> ריק), <i class="en">Urothelium</i> 4–5 שכבות, <i class="en">lamina propria</i>, <b><i class="en">Smooth muscle</i> בשתי שכבות</b> (פנימית אורכית, חיצונית היקפית; בשליש התחתון נוספת שכבה אורכית חיצונית) ו-<i class="en">Adventitia</i>. <b>אין <i class="en">Submucosa</i>.</b></li>
+  <li><b>תפקיד:</b> פריסטלטיקה שדוחפת שתן ל-<i class="en">Bladder</i>. נכנס לדופן ה-<i class="en">Bladder</i> <b>באלכסון</b>, מה שיוצר שסתום נגד זרימה חוזרת.</li>
  </ul>
 </div>
 
 <div class="st" style="--c:#2a9d8f">
- <h4>שלפוחית השתן <i class="en">Urinary bladder · Detrusor</i> <span class="where">אגן</span> <span class="epi">אפיתל מעבר · תאי מטרייה גדולים במיוחד</span></h4>
+ <h4><i class="en">Urinary bladder · Detrusor</i> <span class="where">Pelvic cavity</span> <span class="epi"><i class="en">Urothelium</i> · <i class="en">Umbrella cells</i> גדולים במיוחד</span></h4>
  <ul class="id">
-  <li><b>שכבות:</b> מוקוזה (אורותל + <i class="en">lamina propria</i>), סאב-מוקוזה (רקמת חיבור צפופה, עשירה בכלי דם), <i class="en">Detrusor</i> = 3 שכבות שריר חלק לא מוגדרות היטב, ומבחוץ אדוונטיציה (ועל הגג העליון בלבד: <b>סרוזה</b>, כי הפריטונאום מכסה אותו).</li>
-  <li><b>דינמיקה:</b> ריקה: קפלים עמוקים, אורותל 5–7 שכבות; מלאה: קפלים נעלמים, האפיתל מצטמצם ל-2–3 שכבות. קיבולת 400–600 מ"ל, דחף להטיל ב-150–200 מ"ל.</li>
+  <li><b>שכבות:</b> <i class="en">Mucosa</i> (<i class="en">Urothelium</i> + <i class="en">lamina propria</i>), <i class="en">Submucosa</i> (<i class="en">Connective tissue</i> צפופה, עשירה בכלי דם), <i class="en">Detrusor</i> = 3 שכבות <i class="en">Smooth muscle</i> לא מוגדרות היטב, ומבחוץ <i class="en">Adventitia</i> (ועל הגג העליון בלבד: <b><i class="en">Serosa</i></b>, כי הפריטונאום מכסה אותו).</li>
+  <li><b>דינמיקה:</b> ריקה: קפלים עמוקים, <i class="en">Urothelium</i> 5–7 שכבות; מלאה: קפלים נעלמים, האפיתל מצטמצם ל-2–3 שכבות. קיבולת 400–600 מ"ל, דחף להטיל ב-150–200 מ"ל.</li>
  </ul>
 </div>
 
 <div class="st" style="--c:#6c757d">
- <h4>שופכה <i class="en">Urethra</i> <span class="where">גבר 20 ס"מ · אישה 3–5 ס"מ</span> <span class="epi">אפיתל מעבר ← רב-שכבתי גלילי/פסאודו-סטרטיפיקציה ← קשקשי רב-שכבתי</span></h4>
+ <h4><i class="en">Urethra</i> <span class="where">גבר 20 ס"מ · אישה 3–5 ס"מ</span> <span class="epi"><i class="en">Urothelium</i> ← <i class="en">Stratified columnar</i>/<i class="en">Pseudostratified</i> ← <i class="en">Stratified squamous</i></span></h4>
  <ul class="id">
-  <li><b>גבר, 3 חלקים:</b> <i class="en">Prostatic</i> (3–4 ס"מ, אורותל, מקבל את צינורות הזרע) → <i class="en">Membranous</i> (קצרה, עוברת בסוגר החיצוני המשורטט, אפיתל רב-שכבתי גלילי / פסאודו-סטרטיפיקציה גלילי) → <i class="en">Spongy/penile</i> (15 ס"מ, בתוך <i class="en">corpus spongiosum</i>, אותו אפיתל גלילי, ובקצה <i class="en">stratified squamous</i>).</li>
-  <li><b>אישה:</b> מתחילה באורותל ועוברת ל-<i class="en">non-keratinized stratified squamous</i> הממשיך לעור השפתיים הקטנות. איבר שתן בלבד.</li>
-  <li>בשני המינים: מוקוזה עם קפלים אורכיים, בלוטות ריריות קטנות (<i class="en">Littré</i>), וסוגר חיצוני משורטט סביב החלק האמצעי.</li>
+  <li><b>גבר, 3 חלקים:</b> <i class="en">Prostatic</i> (3–4 ס"מ, <i class="en">Urothelium</i>, מקבל את צינורות הזרע) → <i class="en">Membranous</i> (קצרה, עוברת ב-<i class="en">External striated sphincter</i>, אפיתל <i class="en">Stratified columnar</i> / <i class="en">Pseudostratified columnar</i>) → <i class="en">Spongy/penile</i> (15 ס"מ, בתוך <i class="en">corpus spongiosum</i>, אותו אפיתל <i class="en">Columnar</i>, ובקצה <i class="en">stratified squamous</i>).</li>
+  <li><b>אישה:</b> מתחילה ב-<i class="en">Urothelium</i> ועוברת ל-<i class="en">non-keratinized stratified squamous</i> הממשיך לעור השפתיים הקטנות. איבר שתן בלבד.</li>
+  <li>בשני המינים: <i class="en">Mucosa</i> עם קפלים אורכיים, בלוטות ריריות קטנות (<i class="en">Littré</i>), ו-<i class="en">External striated sphincter</i> סביב החלק האמצעי.</li>
  </ul>
- <div class="mem"><b class="t">שופכה גברית: T → C → C → S.</b> Transitional (פרוסטטי), Columnar (ממברנוזי), Columnar (ספוגי), Squamous (קצה). הכלל: ככל שמתקרבים לעולם החיצון האפיתל נעשה יותר "עורי".</div>
+ <div class="mem"><b class="t"><i class="en">Urethra</i> גברית: T → C → C → S.</b> Transitional (פרוסטטי), Columnar (ממברנוזי), Columnar (ספוגי), Squamous (קצה). הכלל: ככל שמתקרבים לעולם החיצון האפיתל נעשה יותר "עורי".</div>
 </div>
 
 </div><!-- stations -->
@@ -457,7 +430,7 @@ summary{cursor:pointer;font-weight:600;font-size:16px}
 
 <!-- ============================================================ -->
 <section id="corpuscle">
-<h2>3. גופיף הכליה ומחסום הסינון <span class="en">Renal corpuscle &amp; Glomerular filtration barrier</span><span class="key">חובה</span></h2>
+<h2>3. <span class="en main">Renal corpuscle &amp; Glomerular filtration barrier</span><span class="key">חובה</span></h2>
 
 <div class="two">
 <div class="diagram">
@@ -500,7 +473,7 @@ summary{cursor:pointer;font-weight:600;font-size:16px}
   <text x="140" y="60" fill="#c1121f" font-size="11">Glomerular capillaries (fenestrated)</text>
  </g>
 </svg>
-<div class="cap"><b>הגופיף:</b> שני קטבים זה מול זה. בקוטב כלי הדם נכנס העורקיק המביא ויוצא המוליך, ושם צמודים גם ה-<i class="en">Macula densa</i> ותאי ה-JG. בקוטב השתן הקופסית ממשיכה ל-PCT.</div>
+<div class="cap"><b>ה-<i class="en">Renal corpuscle</i>:</b> שני קטבים זה מול זה. ב-<i class="en">Vascular pole</i> נכנס ה-<i class="en">Afferent arteriole</i> ויוצא המוליך, ושם צמודים גם ה-<i class="en">Macula densa</i> ותאי ה-JG. ב-<i class="en">Urinary pole</i> ה-<i class="en">Bowman's capsule</i> ממשיכה ל-PCT.</div>
 </div>
 
 <div class="diagram">
@@ -543,51 +516,51 @@ summary{cursor:pointer;font-weight:600;font-size:16px}
   <text x="330" y="40" text-anchor="middle" fill="#555" font-size="11" font-weight="normal">Bowman's space</text>
  </g>
 </svg>
-<div class="cap"><b>מחסום הסינון, 3 שכבות מהדם אל חלל באומן:</b> ① <i class="en">Fenestrated endothelium</i> (חלונות 70–90 ננומטר, עוצר תאי דם) → ② <i class="en">GBM</i> עבה (300–360 ננומטר; עוצרת חלבונים &gt;70 kDa לפי גודל <b>ומטען שלילי</b>) → ③ <i class="en">Filtration slit diaphragm</i> בין ה-<i class="en">pedicels</i> (~30 ננומטר; עוצר חלבונים קטנים). אלבומין (69 kDa, שלילי) כמעט לא עובר.</div>
+<div class="cap"><b><i class="en">Filtration barrier</i>, 3 שכבות מהדם אל <i class="en">Bowman's space</i>:</b> ① <i class="en">Fenestrated endothelium</i> (חלונות 70–90 ננומטר, עוצר תאי דם) → ② <i class="en">GBM</i> עבה (300–360 ננומטר; עוצרת חלבונים &gt;70 kDa לפי גודל <b>ומטען שלילי</b>) → ③ <i class="en">Filtration slit diaphragm</i> בין ה-<i class="en">pedicels</i> (~30 ננומטר; עוצר חלבונים קטנים). אלבומין (69 kDa, שלילי) כמעט לא עובר.</div>
 </div>
 </div>
 
 <div class="grid2">
  <div class="box">
-  <h4>פודוציטים <i class="en">Podocytes</i><span class="key">חובה</span></h4>
+  <h4><i class="en">Podocytes</i><span class="key">חובה</span></h4>
   <ul>
-   <li>תאי אפיתל כוכביים = העלה הויסצרלי של קופסית באומן. גוף התא "צף" בחלל באומן.</li>
-   <li>מהגוף יוצאים <b>זיזים ראשוניים</b> שמתפצלים ל<b>זיזים שניוניים = רגליות</b> <i class="en">(Pedicels)</i> היושבות ישירות על ה-GBM ומשתלבות זו בזו כמו אצבעות.</li>
-   <li>בין הרגליות: <i class="en">Filtration slits</i> (~30 ננומטר) שמגושרים על ידי <i class="en">Slit diaphragm</i> דמוי רוכסן (חלבון <i class="en">nephrin</i>, <i class="en">P-cadherin</i>; גם <i class="en">podocalyxin</i> השלילי על פני התא).</li>
+   <li>תאי אפיתל כוכביים = העלה הויסצרלי של <i class="en">Bowman's capsule</i>. גוף התא "צף" ב-<i class="en">Bowman's space</i>.</li>
+   <li>מהגוף יוצאים <b>זיזים ראשוניים</b> שמתפצלים ל<b>זיזים שניוניים = <i class="en">Pedicels</i></b> <i class="en">(Pedicels)</i> היושבות ישירות על ה-GBM ומשתלבות זו בזו כמו אצבעות.</li>
+   <li>בין ה-<i class="en">Pedicels</i>: <i class="en">Filtration slits</i> (~30 ננומטר) שמגושרים על ידי <i class="en">Slit diaphragm</i> דמוי רוכסן (חלבון <i class="en">nephrin</i>, <i class="en">P-cadherin</i>; גם <i class="en">podocalyxin</i> השלילי על פני התא).</li>
   </ul>
   <h4>GBM <i class="en">Glomerular basement membrane</i><span class="key">חובה</span></h4>
   <ul>
-   <li>ממברנת בסיס <b>משותפת</b> לאנדותל ולפודוציטים (התמזגות של שתי למינות), ולכן עבה פי 2–3 מהרגיל.</li>
+   <li><i class="en">Basement membrane</i> <b>משותפת</b> ל-<i class="en">Endothelium</i> ול-<i class="en">Podocytes</i> (התמזגות של שתי למינות), ולכן עבה פי 2–3 מהרגיל.</li>
    <li>הרכב: רשת <i class="en">Type IV collagen</i>, <i class="en">Laminin</i> ו-<i class="en">Fibronectin</i> (נקשרות לאינטגרינים), פרוטאוגליקנים עם GAGs פוליאניוניים (הפרן-סולפט) → <b>מטען שלילי</b> שדוחה חלבונים שליליים.</li>
   </ul>
  </div>
  <div class="box">
-  <h4>תאים מזנגיאליים <i class="en">Mesangial cells</i></h4>
+  <h4><i class="en">Mesangial cells</i></h4>
   <ul>
-   <li>תאים מזנכימליים דמויי-פריציטים, יושבים <b>בין הנימים</b> במקומות שאינם מכוסים בפודוציטים, בתוך מטריקס מזנגיאלי (יחד = <i class="en">mesangium</i>).</li>
+   <li>תאים מזנכימליים דמויי-פריציטים, יושבים <b>בין הנימים</b> במקומות שאינם מכוסים ב-<i class="en">Podocytes</i>, בתוך מטריקס <i class="en">Mesangial</i> (יחד = <i class="en">mesangium</i>).</li>
    <li>4 תפקידים: <b>תמיכה</b> פיזית בנימים; <b>כיווץ</b> בתגובה לשינויי לחץ (מווסת שטח סינון ו-GFR); <b>פגוציטוזה</b> של אגרגטים של חלבונים שנתקעו ב-GBM; <b>הפרשת</b> ציטוקינים ופרוסטגלנדינים.</li>
-   <li>מחוץ לגופיף, בקוטב כלי הדם, ממשיכים כתאים <i class="en">Extraglomerular mesangial (Lacis) cells</i> של ה-JGA.</li>
+   <li>מחוץ ל-<i class="en">Renal corpuscle</i>, ב-<i class="en">Vascular pole</i>, ממשיכים כתאים <i class="en">Extraglomerular mesangial (Lacis) cells</i> של ה-JGA.</li>
   </ul>
   <h4>מה עובר ומה לא</h4>
   <ul>
    <li><b>עובר חופשי:</b> מים, אלקטרוליטים (Na⁺, K⁺, Cl⁻, HCO₃⁻), גלוקוז, אוריאה, חומצות אמינו, הורמונים קטנים (אינסולין), ויטמינים.</li>
-   <li><b>לא עובר:</b> תאי דם, חלבונים גדולים (&gt;70 kDa; אלבומין כמעט אפס). חלבון בשתן = פגיעה במחסום (בעיקר בפודוציטים או ב-GBM).</li>
+   <li><b>לא עובר:</b> תאי דם, חלבונים גדולים (&gt;70 kDa; אלבומין כמעט אפס). חלבון בשתן = פגיעה במחסום (בעיקר ב-<i class="en">Podocytes</i> או ב-GBM).</li>
   </ul>
  </div>
 </div>
-<div class="mem"><b class="t">3 F של המסנן:</b> <b>F</b>enestrae (אנדותל) → <b>F</b>ibrous mat (GBM) → <b>F</b>oot processes (רגליות + סדקים). בעברית: <b>א-מ-פ</b>: אנדותל, ממברנה, פודוציט. סדר קבוע מהדם החוצה.</div>
-<div class="mem"><b class="t">מי שטוח ומי כוכבי:</b> פריאטלי = <b>פ</b>שוט ו<b>שטוח</b> (קשקשי). ויסצרלי = פודוציט = "<b>פ</b>ודו" (רגל ביוונית) = תא עם רגליות.</div>
+<div class="mem"><b class="t">3 F של המסנן:</b> <b>F</b>enestrae (<i class="en">Endothelium</i>) → <b>F</b>ibrous mat (GBM) → <b>F</b>oot processes (<i class="en">Pedicels</i> + סדקים). בעברית: <b>א-מ-פ</b>: <i class="en">Endothelium</i>, ממברנה, <i class="en">Podocyte</i>. סדר קבוע מהדם החוצה.</div>
+<div class="mem"><b class="t">מי שטוח ומי כוכבי:</b> פריאטלי = <b>פ</b>שוט ו<b>שטוח</b> (<i class="en">Squamous</i>). ויסצרלי = <i class="en">Podocyte</i> = "<b>פ</b>ודו" (רגל ביוונית) = תא עם <i class="en">Pedicels</i>.</div>
 
 <div class="figs">
- <figure class="fig"><img src="img/s-corpuscle-netter.jpg" alt=""><figcaption><b>הגופיף (Netter):</b> למעלה קוטב כלי הדם עם afferent/efferent ו-macula densa, למטה קוטב השתן. בהגדלה: הממברנה המסננת בין נים לרגליות.<span class="credit">מצגת הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-corpuscle-he-sem.jpg" alt=""><figcaption><b>H&amp;E ו-SEM:</b> משמאל PL = שכבה פריאטלית, CS = חלל הקופסית, G = גלומרולוס, MD = מקולה דנסה צמודה, PCT ו-DCT סביב. מימין SEM: גוף פודוציט ורגליות עוטפות נים.<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
- <figure class="fig"><img src="img/renal-corpuscle-he.jpg" alt=""><figcaption><b>גופיף ב-H&amp;E:</b> פקעת נימים עם המון גרעינים, סביבה החלל הלבן של באומן, ומבחוץ שורת גרעינים שטוחים (פריאטלי). משמאל קוטב כלי הדם, מימין למטה קוטב השתן.<span class="credit">חומרי הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/corpuscle-cells.jpg" alt=""><figcaption><b>סכמת התאים:</b> נימים (אדום), פודוציטים ורגליות (תכלת), תאים מזנגיאליים (סגול) בין הנימים, תאים פריאטליים בדופן, ומימין המעבר ל-PCT.<span class="credit">חומרי הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-barrier-tem-labeled.jpg" alt=""><figcaption><b>TEM של המחסום:</b> לומן הנים למטה, <i class="en">fenestrae</i> באנדותל, ממברנת בסיס, ומעליה רגליות (<i class="en">pedicels</i>) עם סדקים ביניהן. למעלה: גוף הפודוציט בחלל באומן.<span class="credit">מצגת הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-filter-schematic.jpg" alt=""><figcaption><b>מה עוצרת כל שכבה:</b> אנדותל עוצר תאים; GBM עוצרת חלבונים גדולים; סדקי הסינון עוצרים חלבונים קטנים. המסונן: מים, גלוקוז, חומצות אמינו, יונים, אוריאה.<span class="credit">מצגת הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-podocyte-sem.jpg" alt=""><figcaption><b>SEM של פודוציטים:</b> גופי התאים וזיזים ראשוניים (P) שמתפצלים לרגליות משתלבות. מימין בצבע: הרגליות (ירוק) על הנים.<span class="credit">מצגת הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-mesangial.jpg" alt=""><figcaption><b>מזנגיום:</b> בסכמה: תא מזנגיאלי (כתום) בין נימים, בלי ממברנת בסיס ביניהם. ב-TEM: M = תא מזנגיאלי, MM = מטריקס, P = פודוציט, E = אנדותל.<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
- <figure class="fig"><img src="img/s-corpuscle-tem-labeled.jpg" alt=""><figcaption><b>TEM של גופיף שלם:</b> שכבה פריאטלית, חלל באומן, נימים (Cap), פודוציטים, מקולה דנסה צמודה מבחוץ, ו-PCT ו-DCT בשכנות.<span class="credit">מצגת הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-corpuscle-netter.jpg" alt=""><figcaption><b>ה-<i class="en">Renal corpuscle</i> (Netter):</b> למעלה <i class="en">Vascular pole</i> עם afferent/efferent ו-macula densa, למטה <i class="en">Urinary pole</i>. בהגדלה: הממברנה המסננת בין נים ל-<i class="en">Pedicels</i>.<span class="credit">מצגת הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-corpuscle-he-sem.jpg" alt=""><figcaption><b>H&amp;E ו-SEM:</b> משמאל PL = שכבה פריאטלית, CS = חלל ה-<i class="en">Bowman's capsule</i>, G = <i class="en">Glomerulus</i>, MD = <i class="en">Macula densa</i> צמודה, PCT ו-DCT סביב. מימין SEM: גוף <i class="en">Podocyte</i> ו-<i class="en">Pedicels</i> עוטפות נים.<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
+ <figure class="fig"><img src="img/renal-corpuscle-he.jpg" alt=""><figcaption><b><i class="en">Renal corpuscle</i> ב-H&amp;E:</b> פקעת נימים עם המון גרעינים, סביבה החלל הלבן של באומן, ומבחוץ שורת גרעינים שטוחים (פריאטלי). משמאל <i class="en">Vascular pole</i>, מימין למטה <i class="en">Urinary pole</i>.<span class="credit">חומרי הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/corpuscle-cells.jpg" alt=""><figcaption><b>סכמת התאים:</b> נימים (אדום), <i class="en">Podocytes</i> ו-<i class="en">Pedicels</i> (תכלת), <i class="en">Mesangial cells</i> (סגול) בין הנימים, תאים פריאטליים בדופן, ומימין המעבר ל-PCT.<span class="credit">חומרי הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-barrier-tem-labeled.jpg" alt=""><figcaption><b>TEM של המחסום:</b> לומן הנים למטה, <i class="en">fenestrae</i> ב-<i class="en">Endothelium</i>, <i class="en">Basement membrane</i>, ומעליה <i class="en">Pedicels</i> (<i class="en">pedicels</i>) עם סדקים ביניהן. למעלה: גוף ה-<i class="en">Podocyte</i> ב-<i class="en">Bowman's space</i>.<span class="credit">מצגת הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-filter-schematic.jpg" alt=""><figcaption><b>מה עוצרת כל שכבה:</b> <i class="en">Endothelium</i> עוצר תאים; GBM עוצרת חלבונים גדולים; <i class="en">Filtration slits</i> עוצרים חלבונים קטנים. המסונן: מים, גלוקוז, חומצות אמינו, יונים, אוריאה.<span class="credit">מצגת הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-podocyte-sem.jpg" alt=""><figcaption><b>SEM של <i class="en">Podocytes</i>:</b> גופי התאים וזיזים ראשוניים (P) שמתפצלים ל-<i class="en">Pedicels</i> משתלבות. מימין בצבע: ה-<i class="en">Pedicels</i> (ירוק) על הנים.<span class="credit">מצגת הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-mesangial.jpg" alt=""><figcaption><b><i class="en">Mesangium</i>:</b> בסכמה: <i class="en">Mesangial cell</i> (כתום) בין נימים, בלי <i class="en">Basement membrane</i> ביניהם. ב-TEM: M = <i class="en">Mesangial cell</i>, MM = מטריקס, P = <i class="en">Podocyte</i>, E = <i class="en">Endothelium</i>.<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-corpuscle-tem-labeled.jpg" alt=""><figcaption><b>TEM של <i class="en">Renal corpuscle</i> שלם:</b> שכבה פריאטלית, <i class="en">Bowman's space</i>, נימים (Cap), <i class="en">Podocytes</i>, <i class="en">Macula densa</i> צמודה מבחוץ, ו-PCT ו-DCT בשכנות.<span class="credit">מצגת הקורס</span></figcaption></figure>
 </div>
 </section>
 
@@ -598,47 +571,47 @@ summary{cursor:pointer;font-weight:600;font-size:16px}
 
 <table>
  <tr><th>צינורית</th><th>אפיתל</th><th>לומן</th><th>ציטופלסמה</th><th>גרעינים בחתך</th><th>מיקום</th><th>סימן מזהה</th></tr>
- <tr><td><i class="en">PCT</i></td><td>קובואידלי גבוה + <b>brush border</b></td><td>סתום / "פלומתי"</td><td>ורודה-אדומה עמוקה</td><td><b>מעט</b> (3–5), גבולות תאים מטושטשים</td><td>קליפה (הרוב)</td><td>הצינורית הכי אדומה והכי נפוצה בקליפה</td></tr>
- <tr><td><i class="en">PST</i></td><td>כמו PCT</td><td>כמו PCT</td><td>כמו PCT</td><td>מעט</td><td>קרן לשדית, לשד חיצוני</td><td>PCT אבל ישר ומקביל</td></tr>
- <tr><td><i class="en">Thin limbs</i></td><td><b>קשקשי פשוט</b></td><td>ריק, קטן</td><td>כמעט אין</td><td>שטוחים, בולטים ללומן</td><td>לשד</td><td>נראה כמו נים אבל <b>בלי RBC</b></td></tr>
- <tr><td><i class="en">TAL</i></td><td>קובואידלי נמוך, <b>בלי</b> מברשת</td><td>נקי, פתוח</td><td>ורודה בינונית (מיטוכונדריות)</td><td>בינוני-רב</td><td>לשד חיצוני, קרן לשדית</td><td>בקרן: יותר גרעינים ולומן נקי לעומת PST</td></tr>
- <tr><td><i class="en">DCT</i></td><td>קובואידלי נמוך, <b>בלי</b> מברשת</td><td><b>פתוח וריק</b></td><td><b>חיוורת</b></td><td><b>הרבה</b> (6–8), צפופים</td><td>קליפה, ליד הגופיף</td><td>"PCT שהתחוור ונפתח"; macula densa בצד הגופיף</td></tr>
- <tr><td><i class="en">Collecting duct</i></td><td>קובואידלי → <b>גלילי</b></td><td>גדול, נקי</td><td>חיוורת מאוד</td><td>עגולים, <b>גבולות תאים חדים</b></td><td>קרן לשדית, לשד</td><td>"אריחים" חיוורים; תאים כהים בודדים (intercalated)</td></tr>
- <tr><td><i class="en">Vasa recta / capillary</i></td><td>אנדותל (קשקשי)</td><td>מלא <b>RBC</b></td><td>–</td><td>שטוחים מאוד</td><td>לשד</td><td>כדוריות אדומות בלומן</td></tr>
+ <tr><td><i class="en">PCT</i></td><td><i class="en">Cuboidal</i> גבוה + <b>brush border</b></td><td>סתום / "פלומתי"</td><td>ורודה-אדומה עמוקה</td><td><b>מעט</b> (3–5), גבולות תאים מטושטשים</td><td><i class="en">Cortex</i> (הרוב)</td><td>הצינורית הכי אדומה והכי נפוצה ב-<i class="en">Cortex</i></td></tr>
+ <tr><td><i class="en">PST</i></td><td>כמו PCT</td><td>כמו PCT</td><td>כמו PCT</td><td>מעט</td><td><i class="en">Medullary ray</i>, <i class="en">Medulla</i> חיצוני</td><td>PCT אבל ישר ומקביל</td></tr>
+ <tr><td><i class="en">Thin limbs</i></td><td><b><i class="en">Simple squamous</i></b></td><td>ריק, קטן</td><td>כמעט אין</td><td>שטוחים, בולטים ללומן</td><td><i class="en">Medulla</i></td><td>נראה כמו נים אבל <b>בלי RBC</b></td></tr>
+ <tr><td><i class="en">TAL</i></td><td><i class="en">Cuboidal</i> נמוך, <b>בלי</b> <i class="en">Brush border</i></td><td>נקי, פתוח</td><td>ורודה בינונית (<i class="en">Mitochondria</i>)</td><td>בינוני-רב</td><td><i class="en">Medulla</i> חיצוני, <i class="en">Medullary ray</i></td><td>בקרן: יותר גרעינים ולומן נקי לעומת PST</td></tr>
+ <tr><td><i class="en">DCT</i></td><td><i class="en">Cuboidal</i> נמוך, <b>בלי</b> <i class="en">Brush border</i></td><td><b>פתוח וריק</b></td><td><b>חיוורת</b></td><td><b>הרבה</b> (6–8), צפופים</td><td><i class="en">Cortex</i>, ליד ה-<i class="en">Renal corpuscle</i></td><td>"PCT שהתחוור ונפתח"; macula densa בצד ה-<i class="en">Renal corpuscle</i></td></tr>
+ <tr><td><i class="en">Collecting duct</i></td><td><i class="en">Cuboidal</i> → <b><i class="en">Columnar</i></b></td><td>גדול, נקי</td><td>חיוורת מאוד</td><td>עגולים, <b>גבולות תאים חדים</b></td><td><i class="en">Medullary ray</i>, <i class="en">Medulla</i></td><td>"אריחים" חיוורים; תאים כהים בודדים (intercalated)</td></tr>
+ <tr><td><i class="en">Vasa recta / capillary</i></td><td><i class="en">Endothelium</i> (<i class="en">Squamous</i>)</td><td>מלא <b>RBC</b></td><td>–</td><td>שטוחים מאוד</td><td><i class="en">Medulla</i></td><td>כדוריות אדומות בלומן</td></tr>
 </table>
 
 <div class="grid2">
- <div class="mem"><b class="t">PCT לעומת DCT בשלוש מילים כל אחד:</b> PCT = ורוד, פלומה, מעט גרעינים. DCT = חיוור, ריק, הרבה גרעינים. ובקליפה: הרוב PCT, המיעוט DCT.</div>
- <div class="mem"><b class="t">בקרן הלשדית שלושה שכנים:</b> PST (ורוד, מברשת) · TAL (פחות ורוד, נקי, יותר גרעינים) · CD (הכי חיוור, הכי גדול, אריחים). מסדרים לפי "כמה ורוד": PST &gt; TAL &gt; CD.</div>
+ <div class="mem"><b class="t">PCT לעומת DCT בשלוש מילים כל אחד:</b> PCT = ורוד, פלומה, מעט גרעינים. DCT = חיוור, ריק, הרבה גרעינים. וב-<i class="en">Cortex</i>: הרוב PCT, המיעוט DCT.</div>
+ <div class="mem"><b class="t">ב-<i class="en">Medullary ray</i> שלושה שכנים:</b> PST (ורוד, <i class="en">Brush border</i>) · TAL (פחות ורוד, נקי, יותר גרעינים) · CD (הכי חיוור, הכי גדול, אריחים). מסדרים לפי "כמה ורוד": PST &gt; TAL &gt; CD.</div>
 </div>
 
 <h3>מה קורה בתוך תא ה-PCT (ברמת TEM)</h3>
 <ul>
- <li><b>אפיקלית:</b> מיקרו-וילי ארוכים (מברשת) עם נשאים; <b>בועיות אנדוציטוטיות</b> וליזוזומים (פירוק חלבונים קטנים שסוננו).</li>
- <li><b>בזלית:</b> <b>קפלים בזליים עמוקים</b> ובתוכם <b>מיטוכונדריות ארוכות</b> (מראה "משורטט" בבסיס התא) שמספקות ATP למשאבות Na⁺/K⁺.</li>
+ <li><b>אפיקלית:</b> <i class="en">Microvilli</i> ארוכים (<i class="en">Brush border</i>) עם נשאים; <b>בועיות אנדוציטוטיות</b> ו-<i class="en">Lysosomes</i> (פירוק חלבונים קטנים שסוננו).</li>
+ <li><b>בזלית:</b> <b>קפלים בזליים עמוקים</b> ובתוכם <b><i class="en">Mitochondria</i> ארוכות</b> (מראה "משורטט" בבסיס התא) שמספקות ATP למשאבות Na⁺/K⁺.</li>
  <li><b>לטרלית:</b> אינטרדיגיטציות נרחבות (לכן גבולות התאים לא נראים ב-H&amp;E).</li>
- <li><b>סוגי הובלה:</b> טרנס-תאית (אקטיבית ופסיבית: אקוופורינים, משאבות, תעלות, נשאים), פרא-תאית (בין תאים, בעיקר מים), אנדוציטוזה בתיווך רצפטור.</li>
+ <li><b>סוגי הובלה:</b> טרנס-תאית (אקטיבית ופסיבית: <i class="en">Aquaporins</i>, משאבות, תעלות, נשאים), פרא-תאית (בין תאים, בעיקר מים), אנדוציטוזה בתיווך רצפטור.</li>
 </ul>
 
 <div class="figs">
- <figure class="fig"><img src="img/s-netter-pct-vs-dct.jpg" alt=""><figcaption><b>Netter: תא PCT (שמאל) מול DCT (ימין):</b> PCT גבוה עם מברשת, מיטוכונדריות בקפלים בזליים, גבולות משתלבים. DCT נמוך, מיקרו-וילי קצרים וספורים, פחות קפלים.<span class="credit">מצגת הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-pct-dct-he.jpg" alt=""><figcaption><b>H&amp;E קליפה:</b> P = PCT ורוד עם לומן מטושטש; D = DCT חיוור עם לומן נקי והרבה גרעינים; G = גלומרולוס; U = חלל באומן; TP = קוטב השתן. החצים = נימים פריטובולריים.<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-netter-pct-vs-dct.jpg" alt=""><figcaption><b>Netter: תא PCT (שמאל) מול DCT (ימין):</b> PCT גבוה עם <i class="en">Brush border</i>, <i class="en">Mitochondria</i> בקפלים בזליים, גבולות משתלבים. DCT נמוך, <i class="en">Microvilli</i> קצרים וספורים, פחות קפלים.<span class="credit">מצגת הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-pct-dct-he.jpg" alt=""><figcaption><b>H&amp;E <i class="en">Cortex</i>:</b> P = PCT ורוד עם לומן מטושטש; D = DCT חיוור עם לומן נקי והרבה גרעינים; G = <i class="en">Glomerulus</i>; U = <i class="en">Bowman's space</i>; TP = <i class="en">Urinary pole</i>. החצים = <i class="en">Peritubular capillaries</i>.<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
  <figure class="fig"><img src="img/dct-vs-pct.jpg" alt=""><figcaption><b>הגדלה גבוהה:</b> PCT: תאים גבוהים, ורוד, "פלומה" בלומן. DCT: נמוך, המון גרעינים, לומן פתוח.<span class="credit">חומרי הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-pct-distal-corpuscle.jpg" alt=""><figcaption><b>PCT (ורוד) מול Distal tubule (חיוור) ליד גופיף.</b> שימו לב כמה PCT יש ביחס ל-DCT.<span class="credit">מצגת הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-pct-dct-tem.jpg" alt=""><figcaption><b>TEM:</b> PCT (שמאל) עם brush border, מיטוכונדריות (Mi) וליזוזומים (Ly); Distal tubule (ימין) עם לומן חלק בלי מברשת.<span class="credit">מצגת הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-pct-tem.jpg" alt=""><figcaption><b>תא PCT ב-TEM:</b> MV = מיקרו-וילי, V = בועיות אנדוציטוטיות, L = ליזוזומים, M = מיטוכונדריות בקפלים בזליים, C = נים פריטובולרי צמוד לבסיס.<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
- <figure class="fig"><img src="img/tal-vs-pst.jpg" alt=""><figcaption><b>קרן לשדית:</b> TAL (חצים צהובים): יותר גרעינים, לומן נקי. PST (חץ כחול): ורוד, מעט גרעינים, לומן מטושטש.<span class="credit">חומרי הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/pst-medullary-ray.jpg" alt=""><figcaption><b>PST בקרן לשדית:</b> צינוריות ישרות ומקבילות; הגופיף בפינה מזכיר שזו עדיין קליפה.<span class="credit">חומרי הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/loop-of-henle.jpg" alt=""><figcaption><b>לולאת הנלה:</b> הזרועות הדקות = קשקשי נמוך; הזרוע העבה = קובואידלי פשוט.<span class="credit">חומרי הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/thin-limbs-vs-vessels.jpg" alt=""><figcaption><b>לשד:</b> חצים כחולים = זרועות דקות; חצים אדומים = כלי דם קטנים (vasa recta) עם RBC. CD = צינור מאסף.<span class="credit">חומרי הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-loops-vasa-recta.jpg" alt=""><figcaption><b>לשד פנימי:</b> לולאות הנלה דקות לצד vasa recta (עם RBC); ביניהן סטרומה אינטרסטיציאלית.<span class="credit">מצגת הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-medulla-thin-cd.jpg" alt=""><figcaption><b>לשד חיצוני, חתך רוחב:</b> T = thin limbs, A = TAL, C = נימים, CD = צינורות מאספים חיוורים עם גבולות ברורים, I = תאי אינטרסטיציום. ב-TEM: זרוע דקה (T) ליד נימים (C).<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-pct-distal-corpuscle.jpg" alt=""><figcaption><b>PCT (ורוד) מול Distal tubule (חיוור) ליד <i class="en">Renal corpuscle</i>.</b> שימו לב כמה PCT יש ביחס ל-DCT.<span class="credit">מצגת הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-pct-dct-tem.jpg" alt=""><figcaption><b>TEM:</b> PCT (שמאל) עם brush border, <i class="en">Mitochondria</i> (Mi) ו-<i class="en">Lysosomes</i> (Ly); Distal tubule (ימין) עם לומן חלק בלי <i class="en">Brush border</i>.<span class="credit">מצגת הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-pct-tem.jpg" alt=""><figcaption><b>תא PCT ב-TEM:</b> MV = <i class="en">Microvilli</i>, V = בועיות אנדוציטוטיות, L = <i class="en">Lysosomes</i>, M = <i class="en">Mitochondria</i> בקפלים בזליים, C = נים פריטובולרי צמוד לבסיס.<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
+ <figure class="fig"><img src="img/tal-vs-pst.jpg" alt=""><figcaption><b><i class="en">Medullary ray</i>:</b> TAL (חצים צהובים): יותר גרעינים, לומן נקי. PST (חץ כחול): ורוד, מעט גרעינים, לומן מטושטש.<span class="credit">חומרי הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/pst-medullary-ray.jpg" alt=""><figcaption><b>PST ב-<i class="en">Medullary ray</i>:</b> צינוריות ישרות ומקבילות; ה-<i class="en">Renal corpuscle</i> בפינה מזכיר שזו עדיין <i class="en">Cortex</i>.<span class="credit">חומרי הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/loop-of-henle.jpg" alt=""><figcaption><b><i class="en">Loop of Henle</i>:</b> ה-<i class="en">Thin limbs</i> = <i class="en">Squamous</i> נמוך; הזרוע העבה = <i class="en">Simple cuboidal</i>.<span class="credit">חומרי הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/thin-limbs-vs-vessels.jpg" alt=""><figcaption><b><i class="en">Medulla</i>:</b> חצים כחולים = <i class="en">Thin limbs</i>; חצים אדומים = כלי דם קטנים (vasa recta) עם RBC. CD = <i class="en">Collecting duct</i>.<span class="credit">חומרי הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-loops-vasa-recta.jpg" alt=""><figcaption><b><i class="en">Medulla</i> פנימי:</b> <i class="en">Loops of Henle</i> דקות לצד vasa recta (עם RBC); ביניהן סטרומה אינטרסטיציאלית.<span class="credit">מצגת הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-medulla-thin-cd.jpg" alt=""><figcaption><b><i class="en">Medulla</i> חיצוני, חתך רוחב:</b> T = thin limbs, A = TAL, C = נימים, CD = <i class="en">Collecting ducts</i> חיוורים עם גבולות ברורים, I = תאי <i class="en">Interstitium</i>. ב-TEM: <i class="en">Thin limb</i> (T) ליד נימים (C).<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
 </div>
 </section>
 
 <!-- ============================================================ -->
 <section id="jga">
-<h2>5. המנגנון הג'וקסטה-גלומרולרי ו-RAAS <span class="en">Juxtaglomerular apparatus</span><span class="key">חובה</span></h2>
+<h2>5. המנגנון ה-<i class="en">Juxtaglomerular</i> ו-RAAS <span class="en">Juxtaglomerular apparatus</span><span class="key">חובה</span></h2>
 
 <div class="two">
 <div class="diagram">
@@ -663,73 +636,73 @@ summary{cursor:pointer;font-weight:600;font-size:16px}
  <!-- labels -->
  <text x="20" y="80" fill="#c1121f" font-weight="bold">Afferent arteriole</text>
  <text x="100" y="150" fill="#7a1f1a" font-size="11" font-weight="bold">JG (granular) cells</text>
- <text x="100" y="163" fill="#7a1f1a" font-size="10.5">שריר חלק ששונה → renin</text>
+ <text x="100" y="163" fill="#7a1f1a" font-size="10.5">modified smooth muscle → renin</text>
  <text x="20" y="255" fill="#c1121f" font-weight="bold">Efferent arteriole</text>
  <text x="20" y="25" fill="#b5651d" font-weight="bold">DCT</text>
- <text x="130" y="296" fill="#b5651d" font-size="11">Macula densa = תאים גבוהים וצפופים</text>
+ <text x="130" y="296" fill="#b5651d" font-size="11">Macula densa = tall, crowded cells</text>
  <text x="222" y="105" fill="#6a3fa0" font-size="11">Lacis cells</text>
  <text x="300" y="285" text-anchor="middle" fill="#2a6f97" font-size="11">Glomerulus</text>
 </svg>
-<div class="cap"><b>JGA = נקודת המפגש של DCT עם העורקיק המביא בקוטב כלי הדם.</b> שלושה סוגי תאים: <i class="en">Macula densa</i> (בדופן ה-DCT), <i class="en">JG / granular cells</i> (בדופן העורקיק המביא), <i class="en">Lacis cells</i> (ביניהם).</div>
+<div class="cap"><b>JGA = נקודת המפגש של DCT עם ה-<i class="en">Afferent arteriole</i> ב-<i class="en">Vascular pole</i>.</b> שלושה סוגי תאים: <i class="en">Macula densa</i> (בדופן ה-DCT), <i class="en">JG / granular cells</i> (בדופן ה-<i class="en">Afferent arteriole</i>), <i class="en">Lacis cells</i> (ביניהם).</div>
 </div>
 
 <div class="box">
  <h4>שלושת התאים</h4>
  <table>
   <tr><th>תא</th><th>איפה</th><th>מראה</th><th>תפקיד</th></tr>
-  <tr><td><i class="en">Macula densa</i><span class="key">חובה</span></td><td>דופן תחילת ה-DCT, בצד הפונה לגופיף</td><td>תאים גליליים צרים וצפופים, גרעינים דחוסים</td><td>חיישן זרימה ו-Na⁺/Cl⁻ בלומן</td></tr>
-  <tr><td><i class="en">JG (granular) cells</i><span class="key">חובה</span></td><td>טוניקה מדיה של העורקיק <b>המביא</b></td><td>תאי שריר חלק ששונו, עם גרגירי הפרשה</td><td>מפרישים <b>רנין</b>; גם ברורצפטור תוך-כלייתי</td></tr>
-  <tr><td><i class="en">Lacis / extraglomerular mesangial cells</i></td><td>במשולש בין שני העורקיקים ל-macula densa</td><td>תאים חיוורים בתוך מטריקס</td><td>לא ברור; כנראה תיווך אותות</td></tr>
+  <tr><td><i class="en">Macula densa</i><span class="key">חובה</span></td><td>דופן תחילת ה-DCT, בצד הפונה ל-<i class="en">Renal corpuscle</i></td><td>תאים <i class="en">Columnar</i> צרים וצפופים, גרעינים דחוסים</td><td>חיישן זרימה ו-Na⁺/Cl⁻ בלומן</td></tr>
+  <tr><td><i class="en">JG (granular) cells</i><span class="key">חובה</span></td><td>טוניקה מדיה של ה-<i class="en">Arteriole</i> <b>המביא</b></td><td><i class="en">Smooth muscle cells</i> ששונו, עם גרגירי הפרשה</td><td>מפרישים <b><i class="en">Renin</i></b>; גם <i class="en">Baroreceptor</i> תוך-כלייתי</td></tr>
+  <tr><td><i class="en">Lacis / extraglomerular mesangial cells</i></td><td>במשולש בין שני ה-<i class="en">Arterioles</i> ל-macula densa</td><td>תאים חיוורים בתוך מטריקס</td><td>לא ברור; כנראה תיווך אותות</td></tr>
  </table>
  <h4>שני תפקידים, אותם מתווכים</h4>
  <ol>
-  <li><b>משוב טובולו-גלומרולרי</b> <i class="en">(TG feedback)</i> = שמירה על GFR קבוע (אוטורגולציה, יחד עם הרפלקס המיוגני): GFR גבוה → הרבה Na⁺ מגיע ל-MD → הפרשת <b>ATP/אדנוזין</b> → <b>כיווץ</b> העורקיק המביא → GFR יורד. GFR נמוך → <b>PGE₂/NO</b> → <b>הרחבה</b>.</li>
-  <li><b>ויסות רנין</b> = ויסות סך הנתרן בגוף (ולכן נפח ולחץ דם).</li>
+  <li><b>משוב טובולו-גלומרולרי</b> <i class="en">(TG feedback)</i> = שמירה על GFR קבוע (אוטורגולציה, יחד עם הרפלקס המיוגני): GFR גבוה → הרבה Na⁺ מגיע ל-MD → הפרשת <b>ATP/אדנוזין</b> → <b>כיווץ</b> ה-<i class="en">Afferent arteriole</i> → GFR יורד. GFR נמוך → <b>PGE₂/NO</b> → <b>הרחבה</b>.</li>
+  <li><b>ויסות <i class="en">Renin</i></b> = ויסות סך הנתרן בגוף (ולכן נפח ולחץ דם).</li>
  </ol>
 </div>
 </div>
 
 <div class="grid2">
  <div class="box">
-  <h4>שלושת המווסתים של הפרשת רנין</h4>
+  <h4>שלושת המווסתים של הפרשת <i class="en">Renin</i></h4>
   <table>
-   <tr><th>גירוי</th><th>השפעה על רנין</th></tr>
+   <tr><th>גירוי</th><th>השפעה על <i class="en">Renin</i></th></tr>
    <tr><td>סימפתטי: נוראפינפרין על רצפטור <b>β₁</b> בתאי JG</td><td><b>↑</b></td></tr>
-   <tr><td>לחץ בעורקיק המביא ↑ (JG כברורצפטור)</td><td><b>↓</b></td></tr>
+   <tr><td>לחץ ב-<i class="en">Afferent arteriole</i> ↑ (JG כ-<i class="en">Baroreceptor</i>)</td><td><b>↓</b></td></tr>
    <tr><td>זרימת Na⁺ ב-macula densa ↑</td><td><b>↓</b></td></tr>
   </table>
-  <div class="mem"><b class="t">"סימפתטי מעלה; לחץ ומלח מורידים".</b> הכליה "רוצה" רנין כשנראה לה שאין מספיק נפח: לחץ נמוך בעורקיק, מעט מלח בצינורית, או שהמוח (סימפתטי) מודיע על מצוקה.</div>
+  <div class="mem"><b class="t">"סימפתטי מעלה; לחץ ומלח מורידים".</b> הכליה "רוצה" <i class="en">Renin</i> כשנראה לה שאין מספיק נפח: לחץ נמוך ב-<i class="en">Arteriole</i>, מעט מלח בצינורית, או שהמוח (סימפתטי) מודיע על מצוקה.</div>
  </div>
  <div class="box">
   <h4>RAAS בשורה אחת</h4>
   <div class="chain">
-   <span>Angiotensinogen (כבד)</span><i>→ Renin (שלב קובע קצב) →</i><span>Angiotensin I (10 ח"א)</span><i>→ ACE (אנדותל ריאה) →</i><span class="hl">Angiotensin II (8 ח"א)</span>
+   <span>Angiotensinogen (כבד)</span><i>→ Renin (שלב קובע קצב) →</i><span>Angiotensin I (10 ח"א)</span><i>→ ACE (<i class="en">Endothelium</i> ריאה) →</i><span class="hl">Angiotensin II (8 ח"א)</span>
   </div>
-  <p>אנגיוטנסין II: כיווץ כלי דם, הפרשת <b>אלדוסטרון</b> (ספיגת Na⁺ בצינור המאסף), הפרשת ADH, צמא, כיווץ העורקיק המוליך (שומר GFR). התוצאה: עליית נפח ולחץ דם.</p>
-  <div class="mem"><b class="t">MD = "מד":</b> המקולה דנסה <b>מודדת</b> מלח. <b>JG = Juice Generator:</b> מייצר את "המיץ" (רנין).</div>
+  <p><i class="en">Angiotensin</i> II: כיווץ כלי דם, הפרשת <b><i class="en">Aldosterone</i></b> (ספיגת Na⁺ ב-<i class="en">Collecting duct</i>), הפרשת ADH, צמא, כיווץ ה-<i class="en">Efferent arteriole</i> (שומר GFR). התוצאה: עליית נפח ולחץ דם.</p>
+  <div class="mem"><b class="t">MD = "מד":</b> ה-<i class="en">Macula densa</i> <b>מודדת</b> מלח. <b>JG = Juice Generator:</b> מייצר את "המיץ" (<i class="en">Renin</i>).</div>
  </div>
 </div>
 
 <div class="figs">
- <figure class="fig"><img src="img/jga-diagram.jpg" alt=""><figcaption><b>סכמת ה-JGA:</b> macula densa (תכלת) בדופן ה-DCT המוקדמת, תאים מזנגיאליים חוץ-גלומרולריים (סגול), תאי JG (כחול כהה) בדופן העורקיק המביא.<span class="credit">חומרי הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-jga-he-netter.jpg" alt=""><figcaption><b>JGA ב-H&amp;E:</b> AA = עורקיק מביא עם תאי JG בדופן, MD = מקולה דנסה בדופן ה-DCT (D), EA = עורקיק מוליך, G = גלומרולוס, US = חלל באומן.<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
- <figure class="fig"><img src="img/jga-he.jpg" alt=""><figcaption><b>JGA:</b> MD = שורת גרעינים צפופים; EM = תאים חוץ-גלומרולריים בין ה-MD לגופיף; JG = תאי שריר חלק ששונו ב-afferent arteriole (aa).<span class="credit">חומרי הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/jg-cells-renin.jpg" alt=""><figcaption><b>צביעה אימונית לרנין:</b> תאי ה-JG בדופן העורקיק המביא צבועים חום. ההוכחה שהם תאי שריר חלק שהפכו לתאי הפרשה.<span class="credit">חומרי הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-renin-regulation.jpg" alt=""><figcaption><b>ויסות רנין:</b> סימפתטי (+), ירידת לחץ בעורקיק המביא (+), macula densa (±) → רנין → אנגיוטנסין II.<span class="credit">מצגת הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-raas-chart.jpg" alt=""><figcaption><b>RAAS:</b> רנין (שלב קובע קצב) → Ang I → ACE → Ang II → ספיגת Na⁺, כיווץ כלי דם, אלדוסטרון.<span class="credit">מצגת הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/jga-diagram.jpg" alt=""><figcaption><b>סכמת ה-JGA:</b> macula densa (תכלת) בדופן ה-DCT המוקדמת, <i class="en">Mesangial cells</i> חוץ-גלומרולריים (סגול), תאי JG (כחול כהה) בדופן ה-<i class="en">Afferent arteriole</i>.<span class="credit">חומרי הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-jga-he-netter.jpg" alt=""><figcaption><b>JGA ב-H&amp;E:</b> AA = <i class="en">Afferent arteriole</i> עם תאי JG בדופן, MD = <i class="en">Macula densa</i> בדופן ה-DCT (D), EA = <i class="en">Efferent arteriole</i>, G = <i class="en">Glomerulus</i>, US = <i class="en">Bowman's space</i>.<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
+ <figure class="fig"><img src="img/jga-he.jpg" alt=""><figcaption><b>JGA:</b> MD = שורת גרעינים צפופים; EM = תאים חוץ-גלומרולריים בין ה-MD ל-<i class="en">Renal corpuscle</i>; JG = <i class="en">Smooth muscle cells</i> ששונו ב-afferent arteriole (aa).<span class="credit">חומרי הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/jg-cells-renin.jpg" alt=""><figcaption><b>צביעה אימונית ל-<i class="en">Renin</i>:</b> תאי ה-JG בדופן ה-<i class="en">Afferent arteriole</i> צבועים חום. ההוכחה שהם <i class="en">Smooth muscle cells</i> שהפכו לתאי הפרשה.<span class="credit">חומרי הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-renin-regulation.jpg" alt=""><figcaption><b>ויסות <i class="en">Renin</i>:</b> סימפתטי (+), ירידת לחץ ב-<i class="en">Afferent arteriole</i> (+), macula densa (±) → <i class="en">Renin</i> → <i class="en">Angiotensin</i> II.<span class="credit">מצגת הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-raas-chart.jpg" alt=""><figcaption><b>RAAS:</b> <i class="en">Renin</i> (שלב קובע קצב) → Ang I → ACE → Ang II → ספיגת Na⁺, כיווץ כלי דם, <i class="en">Aldosterone</i>.<span class="credit">מצגת הקורס</span></figcaption></figure>
 </div>
 </section>
 
 <!-- ============================================================ -->
 <section id="cd">
-<h2>6. צינור מאסף: תאים עיקריים ומשולבים <span class="en">Collecting duct · Principal &amp; Intercalated cells</span><span class="key">חובה</span></h2>
+<h2>6. <span class="en main">Collecting duct · Principal &amp; Intercalated cells</span><span class="key">חובה</span></h2>
 <div class="grid2">
  <div class="box">
   <table>
-   <tr><th></th><th>תאים עיקריים <i class="en">Principal cells</i></th><th>תאים משולבים <i class="en">Intercalated cells</i></th></tr>
+   <tr><th></th><th><i class="en">Principal cells</i></th><th><i class="en">Intercalated cells</i></th></tr>
    <tr><td>שכיחות</td><td>~70%</td><td>~30%, מפוזרים בין העיקריים</td></tr>
-   <tr><td>מראה</td><td><b>חיוורים</b>, מעט אברונים, מיקרו-וילי דלילים, <b>גבולות תאים ברורים</b>, קפלים בזליים</td><td><b>כהים</b> יותר, הרבה מיטוכונדריות, קפלים אפיקליים (מיקרופליקות)</td></tr>
-   <tr><td>תפקיד</td><td>ספיגת <b>מים</b> דרך <i class="en">Aquaporin-2</i> בתגובה ל-<i class="en">ADH (AVP)</i>; ספיגת Na⁺ והפרשת K⁺ בתגובה לאלדוסטרון</td><td>ויסות <b>pH</b>: סוג A מפריש H⁺ (חמצת), סוג B מפריש HCO₃⁻ (בססת); ספיגת K⁺</td></tr>
+   <tr><td>מראה</td><td><b>חיוורים</b>, מעט אברונים, <i class="en">Microvilli</i> דלילים, <b>גבולות תאים ברורים</b>, קפלים בזליים</td><td><b>כהים</b> יותר, הרבה <i class="en">Mitochondria</i>, קפלים אפיקליים (מיקרופליקות)</td></tr>
+   <tr><td>תפקיד</td><td>ספיגת <b>מים</b> דרך <i class="en">Aquaporin-2</i> בתגובה ל-<i class="en">ADH (AVP)</i>; ספיגת Na⁺ והפרשת K⁺ בתגובה ל-<i class="en">Aldosterone</i></td><td>ויסות <b>pH</b>: סוג A מפריש H⁺ (חמצת), סוג B מפריש HCO₃⁻ (בססת); ספיגת K⁺</td></tr>
   </table>
   <div class="mem"><b class="t">Principal = Pale, Plenty, aquaPorins.</b> <b class="t">Intercalated = Ions (H⁺/HCO₃⁻), Intense (כהה).</b></div>
  </div>
@@ -739,50 +712,50 @@ summary{cursor:pointer;font-weight:600;font-size:16px}
    <li>אוסמולריות הפלזמה עולה → ההיפותלמוס/נוירוהיפופיזה משחררים ADH.</li>
    <li>ADH נקשר לרצפטור V2 בממברנה הבזולטרלית של התא העיקרי.</li>
    <li>בועיות עם <b>AQP2</b> מתמזגות לממברנה <b>האפיקלית</b>.</li>
-   <li>מים נכנסים לתא ויוצאים דרך AQP3/4 הבזולטרליים אל האינטרסטיציום ההיפרטוני ומשם ל-vasa recta.</li>
+   <li>מים נכנסים לתא ויוצאים דרך AQP3/4 הבזולטרליים אל ה-<i class="en">Interstitium</i> ההיפרטוני ומשם ל-vasa recta.</li>
    <li>התוצאה: שתן מרוכז ומעט. בלי ADH: AQP2 מוכנסים פנימה, שתן מדולל ומרובה (סוכרת תפלה).</li>
   </ol>
-  <p><b>מסלול הצינורות:</b> connecting tubules של כמה נפרונים → <i class="en">cortical CD</i> בקרן הלשדית → <i class="en">medullary CD</i> (מתאחדים, גדלים, גליליים) → <i class="en">papillary ducts of Bellini</i> → <i class="en">minor calyx</i>.</p>
+  <p><b>מסלול הצינורות:</b> connecting tubules של כמה <i class="en">Nephrons</i> → <i class="en">cortical CD</i> ב-<i class="en">Medullary ray</i> → <i class="en">medullary CD</i> (מתאחדים, גדלים, <i class="en">Columnar</i>) → <i class="en">papillary ducts of Bellini</i> → <i class="en">minor calyx</i>.</p>
  </div>
 </div>
 <div class="figs">
- <figure class="fig"><img src="img/cd-medulla.jpg" alt=""><figcaption><b>CD בלשד:</b> חתך רוחב (שמאל): צינורות גדולים, לומן נקי, תאים גליליים עם גבולות ברורים; חצים אדומים = vasa recta. חתך אורך (ימין): CD ישרים (חצים צהובים).<span class="credit">חומרי הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-cd-he.jpg" alt=""><figcaption><b>CD לשדי בהגדלה:</b> תאים חיוורים עם גבולות חדים ("אריחים"); VR = vasa recta צמודה.<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
- <figure class="fig"><img src="img/s-netter-cd-cells.jpg" alt=""><figcaption><b>Netter: תאי ה-CD:</b> תאים בהירים (עיקריים) עם מיקרו-וילי ספורים וגבולות לטרליים ישרים, וביניהם תא כהה משולב.<span class="credit">מצגת הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-papilla-transition.jpg" alt=""><figcaption><b>פפילה ← גביע:</b> CD גלילי (CD) נפתח אל הגביע הקטן (MC); האפיתל מתחלף לאורותל (U). RP = פפילה, A = אדוונטיציה.<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
- <figure class="fig"><img src="img/s-fluid-transport.jpg" alt=""><figcaption><b>כל הדרך:</b> חלל הקופסית → PCT → זרועות הלולאה → DCT → CT → CD → papillary duct → גביעים → אגן → שופכן → שלפוחית → שופכה.<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
+ <figure class="fig"><img src="img/cd-medulla.jpg" alt=""><figcaption><b>CD ב-<i class="en">Medulla</i>:</b> חתך רוחב (שמאל): צינורות גדולים, לומן נקי, תאים <i class="en">Columnar</i> עם גבולות ברורים; חצים אדומים = vasa recta. חתך אורך (ימין): CD ישרים (חצים צהובים).<span class="credit">חומרי הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-cd-he.jpg" alt=""><figcaption><b>CD <i class="en">Medullary</i> בהגדלה:</b> תאים חיוורים עם גבולות חדים ("אריחים"); VR = vasa recta צמודה.<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-netter-cd-cells.jpg" alt=""><figcaption><b>Netter: תאי ה-CD:</b> תאים בהירים (עיקריים) עם <i class="en">Microvilli</i> ספורים וגבולות לטרליים ישרים, וביניהם תא כהה משולב.<span class="credit">מצגת הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-papilla-transition.jpg" alt=""><figcaption><b><i class="en">Papilla</i> ← <i class="en">Calyx</i>:</b> CD <i class="en">Columnar</i> (CD) נפתח אל <i class="en">Minor calyx</i> (MC); האפיתל מתחלף ל-<i class="en">Urothelium</i> (U). RP = <i class="en">Papilla</i>, A = <i class="en">Adventitia</i>.<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-fluid-transport.jpg" alt=""><figcaption><b>כל הדרך:</b> חלל ה-<i class="en">Bowman's capsule</i> → PCT → זרועות הלולאה → DCT → CT → CD → papillary duct → <i class="en">Calyces</i> → <i class="en">Renal pelvis</i> → <i class="en">Ureter</i> → <i class="en">Bladder</i> → <i class="en">Urethra</i>.<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
 </div>
 </section>
 
 <!-- ============================================================ -->
 <section id="blood">
 <h2>7. אספקת הדם לכליה <span class="en">Renal circulation</span></h2>
-<p>הכליה היא המקרה היחיד בגוף של <b>שתי רשתות נימים עורקיות בטור</b>: גלומרולוס → עורקיק מוליך → נימים פריטובולריים/vasa recta. כלומר "מערכת שער עורקית".</p>
+<p>הכליה היא המקרה היחיד בגוף של <b>שתי רשתות נימים עורקיות בטור</b>: <i class="en">Glomerulus</i> → <i class="en">Efferent arteriole</i> → <i class="en">Peritubular capillaries</i>/vasa recta. כלומר "מערכת שער עורקית".</p>
 <div class="chain">
- <span>Renal artery</span><i>→</i><span>Segmental arteries</span><i>→</i><span>Interlobar arteries (בעמודות, בין הפירמידות)</span><i>→</i><span>Arcuate arteries (בגבול קליפה–לשד, "קשתות" על בסיס הפירמידה)</span><i>→</i><span>Interlobular / Cortical radiate arteries (עולות בקליפה בין האוניות)</span><i>→</i><span class="hl">Afferent arteriole</span><i>→</i><span class="hl">Glomerular capillaries</span><i>→</i><span class="hl">Efferent arteriole</span><i>→</i><span class="g">Peritubular capillaries (נפרון קורטיקלי)</span><i>או</i><span class="g">Vasa recta (ג'וקסטה-מדולרי, יורדים ללשד)</span><i>→</i><span>Interlobular v.</span><i>→</i><span>Arcuate v.</span><i>→</i><span>Interlobar v.</span><i>→</i><span>Renal vein</span>
+ <span>Renal artery</span><i>→</i><span>Segmental arteries</span><i>→</i><span>Interlobar arteries (ב-<i class="en">Renal columns</i>, בין ה-<i class="en">Pyramids</i>)</span><i>→</i><span>Arcuate arteries (בגבול <i class="en">Cortex</i>–<i class="en">Medulla</i>, "קשתות" על בסיס ה-<i class="en">Pyramid</i>)</span><i>→</i><span>Interlobular / Cortical radiate arteries (עולות ב-<i class="en">Cortex</i> בין ה-<i class="en">Lobules</i>)</span><i>→</i><span class="hl">Afferent arteriole</span><i>→</i><span class="hl">Glomerular capillaries</span><i>→</i><span class="hl">Efferent arteriole</span><i>→</i><span class="g">Peritubular capillaries (<i class="en">Nephron</i> <i class="en">Cortical</i>)</span><i>או</i><span class="g">Vasa recta (<i class="en">Juxtamedullary</i>, יורדים ל-<i class="en">Medulla</i>)</span><i>→</i><span>Interlobular v.</span><i>→</i><span>Arcuate v.</span><i>→</i><span>Interlobar v.</span><i>→</i><span>Renal vein</span>
 </div>
 <div class="grid2">
  <div class="box">
   <ul>
-   <li><b>עורקיק מביא ומוליך</b><span class="key">חובה</span>: המביא רחב יותר ומכיל את תאי ה-JG; המוליך צר יותר (עמידות → לחץ גבוה בגלומרולוס). שניהם יוצאים ונכנסים ב-<i class="en">vascular pole</i>.</li>
-   <li><b>נימים פריטובולריים</b><span class="key">חובה</span>: <i class="en">fenestrated</i>, עוטפים את PCT ו-DCT בקליפה, קולטים את כל מה שנספג ומספקים את מה שמופרש.</li>
-   <li><b>Vasa recta</b>: כלים ישרים ודקים, <i class="en">fenestrated</i>, יורדים ועולים במקביל ללולאות הנלה; מחליפים חומרים ב"זרם נגדי" <i class="en">(countercurrent exchange)</i> ושומרים על המפל ההיפרטוני בלשד בלי לשטוף אותו.</li>
-   <li>קליפה: זרימה פי 10 מהלשד. הלשד חי בהיפוקסיה יחסית (רגיש לפגיעה).</li>
+   <li><b><i class="en">Afferent arteriole</i> ומוליך</b><span class="key">חובה</span>: המביא רחב יותר ומכיל את תאי ה-JG; המוליך צר יותר (עמידות → לחץ גבוה ב-<i class="en">Glomerulus</i>). שניהם יוצאים ונכנסים ב-<i class="en">vascular pole</i>.</li>
+   <li><b><i class="en">Peritubular capillaries</i></b><span class="key">חובה</span>: <i class="en">fenestrated</i>, עוטפים את PCT ו-DCT ב-<i class="en">Cortex</i>, קולטים את כל מה שנספג ומספקים את מה שמופרש.</li>
+   <li><b>Vasa recta</b>: כלים ישרים ודקים, <i class="en">fenestrated</i>, יורדים ועולים במקביל ל-<i class="en">Loops of Henle</i>; מחליפים חומרים ב"זרם נגדי" <i class="en">(countercurrent exchange)</i> ושומרים על המפל ההיפרטוני ב-<i class="en">Medulla</i> בלי לשטוף אותו.</li>
+   <li><i class="en">Cortex</i>: זרימה פי 10 מ-<i class="en">Medulla</i>. ה-<i class="en">Medulla</i> חי בהיפוקסיה יחסית (רגיש לפגיעה).</li>
   </ul>
  </div>
- <div class="mem"><b class="t">סדר העורקים:</b> <b>R</b>eally <b>S</b>mart <b>I</b>nterns <b>A</b>lways <b>I</b>dentify <b>A</b>rterioles = Renal, Segmental, Interlobar, Arcuate, Interlobular, Afferent. ובהיגיון מרחבי: בין <b>אונות</b> (interlobar) → <b>קשת</b> על בסיס הפירמידה (arcuate) → בין <b>אוניות</b> (interlobular). הכליה בנויה אונות &gt; אוניות, אז interlobar לפני interlobular.</div>
+ <div class="mem"><b class="t">סדר העורקים:</b> <b>R</b>eally <b>S</b>mart <b>I</b>nterns <b>A</b>lways <b>I</b>dentify <b>A</b>rterioles = Renal, Segmental, Interlobar, Arcuate, Interlobular, Afferent. ובהיגיון מרחבי: בין <b>אונות</b> (interlobar) → <b>קשת</b> על בסיס ה-<i class="en">Pyramid</i> (arcuate) → בין <b><i class="en">Lobules</i></b> (interlobular). הכליה בנויה אונות &gt; <i class="en">Lobules</i>, אז interlobar לפני interlobular.</div>
 </div>
 <div class="figs">
- <figure class="fig"><img src="img/s-blood-supply-chart.jpg" alt=""><figcaption><b>תרשים זרימה:</b> מעורק הכליה דרך הסגמנטלי, בין-אונתי, קשתי, בין-אוניתי → עורקיק מביא → גלומרולוס → מוליך → נימים פריטובולריים או vasa recta → ורידים במקביל.<span class="credit">מצגת הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-gross-kidney.jpg" alt=""><figcaption><b>חתך כליה:</b> שימו לב לעורקים הבין-אונתיים בעמודות ולעורקים הקשתיים על בסיס הפירמידות.<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-blood-supply-chart.jpg" alt=""><figcaption><b>תרשים זרימה:</b> מ-<i class="en">Renal artery</i> דרך הסגמנטלי, <i class="en">Interlobar</i>, קשתי, <i class="en">Interlobular</i> → <i class="en">Afferent arteriole</i> → <i class="en">Glomerulus</i> → מוליך → <i class="en">Peritubular capillaries</i> או vasa recta → ורידים במקביל.<span class="credit">מצגת הקורס</span></figcaption></figure>
+ 
 </div>
 </section>
 
 <!-- ============================================================ -->
 <section id="lower">
-<h2>8. דרכי השתן: אורותל, שופכן, שלפוחית ושופכה <span class="en">Lower urinary tract</span></h2>
+<h2>8. דרכי השתן: <i class="en">Urothelium</i>, <i class="en">Ureter</i>, <i class="en">Bladder</i> ו-<i class="en">Urethra</i> <span class="en">Lower urinary tract</span></h2>
 
-<h3>אפיתל מעבר <span class="en">Urothelium / Transitional epithelium</span><span class="key">חובה</span></h3>
+<h3><i class="en">Urothelium</i> <span class="en">Urothelium / Transitional epithelium</span><span class="key">חובה</span></h3>
 <div class="two">
 <div class="diagram">
 <svg viewBox="0 0 460 250" xmlns="http://www.w3.org/2000/svg" font-family="Arial" font-size="12">
@@ -802,7 +775,7 @@ summary{cursor:pointer;font-weight:600;font-size:16px}
  <g fill="#fff"><circle cx="38" cy="80" r="4"/><circle cx="98" cy="76" r="4"/><circle cx="112" cy="76" r="4"/><circle cx="175" cy="80" r="4"/></g>
  <!-- plaques -->
  <g stroke="#0b3d38" stroke-width="3"><path d="M20 86 Q 40 62 60 86" fill="none" stroke-dasharray="5 3"/><path d="M78 86 Q 105 58 132 86" fill="none" stroke-dasharray="5 3"/><path d="M148 86 Q 172 62 200 86" fill="none" stroke-dasharray="5 3"/></g>
- <text x="110" y="20" text-anchor="middle" font-weight="bold">שלפוחית ריקה: 5–7 שכבות</text>
+ <text x="110" y="20" text-anchor="middle" font-weight="bold">Empty bladder: 5–7 layers</text>
  <text x="110" y="222" text-anchor="middle" font-size="11">Basal · Intermediate · Umbrella</text>
  <!-- distended -->
  <rect x="250" y="30" width="200" height="170" fill="#fdf6ee" stroke="#ccc"/>
@@ -811,68 +784,68 @@ summary{cursor:pointer;font-weight:600;font-size:16px}
  <g fill="#a8dadc" stroke="#2a9d8f"><rect x="252" y="166" width="48" height="16"/><rect x="302" y="166" width="48" height="16"/><rect x="352" y="166" width="48" height="16"/><rect x="402" y="166" width="46" height="16"/></g>
  <g fill="#2a9d8f" stroke="#1b6b62" stroke-width="1.5"><path d="M252 164 Q 300 150 350 164 Z"/><path d="M350 164 Q 400 150 448 164 Z"/></g>
  <g stroke="#0b3d38" stroke-width="3" fill="none"><path d="M258 162 Q 300 152 344 162"/><path d="M356 162 Q 400 152 442 162"/></g>
- <text x="350" y="20" text-anchor="middle" font-weight="bold">שלפוחית מלאה: 2–3 שכבות</text>
- <text x="350" y="222" text-anchor="middle" font-size="11">הפלאקים נפרשים, תאי הביניים זזים הצידה</text>
- <text x="350" y="100" text-anchor="middle" fill="#9a5b00" font-size="11">לומן: שתן היפרטוני</text>
+ <text x="350" y="20" text-anchor="middle" font-weight="bold">Full bladder: 2–3 layers</text>
+ <text x="350" y="222" text-anchor="middle" font-size="11">Plaques unfold, intermediate cells slide sideways</text>
+ <text x="350" y="100" text-anchor="middle" fill="#9a5b00" font-size="11">Lumen: hypertonic urine</text>
 </svg>
-<div class="cap">אפיתל <b>רב-שכבתי</b> ייחודי שמשנה את מספר השכבות שלו לפי מילוי האיבר. הקו המקווקו הכהה = <i class="en">uroplakin plaques</i> (ממברנה א-סימטרית) על פני תאי המטרייה.</div>
+<div class="cap">אפיתל <b><i class="en">Stratified</i></b> ייחודי שמשנה את מספר השכבות שלו לפי מילוי האיבר. הקו המקווקו הכהה = <i class="en">uroplakin plaques</i> (ממברנה א-סימטרית) על פני <i class="en">Umbrella cells</i>.</div>
 </div>
 <div class="box">
  <h4>שלוש השכבות</h4>
  <ol>
-  <li><b>בזלית:</b> שכבה אחת של תאים קטנים על ממברנת בסיס דקה (תאי הגזע של האפיתל).</li>
-  <li><b>ביניים:</b> 1 עד כמה שכבות של תאים קובואידליים / גליליים נמוכים, "דמויי אגס".</li>
-  <li><b>שטחית = תאי מטרייה</b> <i class="en">(Umbrella cells)</i><span class="key">חובה</span>: תאים <b>גדולים מאוד</b> (עד 100 מיקרון), קמורים ללומן, לפעמים <b>דו-גרעיניים</b>, מכסים כמה תאי ביניים כמו מטרייה.</li>
+  <li><b>בזלית:</b> שכבה אחת של תאים קטנים על <i class="en">Basement membrane</i> דקה (תאי הגזע של האפיתל).</li>
+  <li><b>ביניים:</b> 1 עד כמה שכבות של תאים <i class="en">Cuboidal</i> / <i class="en">Columnar</i> נמוכים, "דמויי אגס".</li>
+  <li><b>שטחית = <i class="en">Umbrella cells</i></b> <i class="en">(Umbrella cells)</i><span class="key">חובה</span>: תאים <b>גדולים מאוד</b> (עד 100 מיקרון), קמורים ללומן, לפעמים <b>דו-גרעיניים</b>, מכסים כמה תאי ביניים כמו מטרייה.</li>
  </ol>
- <h4>למה תאי המטרייה עמידים לשתן?</h4>
+ <h4>למה <i class="en">Umbrella cells</i> עמידים לשתן?</h4>
  <ul>
   <li>פני השטח האפיקליים מורכבים מ-<i class="en">Asymmetric unit membrane (AUM)</i>: העלה החיצוני של הממברנה <b>עבה פי 2</b> מהפנימי.</li>
-  <li>בתוכה פלאקים נוקשים של חלבוני <i class="en">Uroplakins</i> (רפסודות ליפידיות עם חלבונים אינטגרליים).</li>
-  <li>פלאקים + <i class="en">tight junctions</i> נרחבים בין התאים = <b>מחסום אוסמוטי</b>: השתן ההיפרטוני לא שואב מים מהרקמה, והרעלים שבו לא חודרים.</li>
+  <li>בתוכה <i class="en">Plaques</i> נוקשים של חלבוני <i class="en">Uroplakins</i> (רפסודות ליפידיות עם חלבונים אינטגרליים).</li>
+  <li><i class="en">Plaques</i> + <i class="en">tight junctions</i> נרחבים בין התאים = <b>מחסום אוסמוטי</b>: השתן ההיפרטוני לא שואב מים מהרקמה, והרעלים שבו לא חודרים.</li>
  </ul>
  <h4>ריקה לעומת מלאה</h4>
  <ul>
-  <li><b>ריקה:</b> המוקוזה מקופלת; תאי המטרייה מקפלים את הממברנה ומכניסים את הפלאקים לבועיות דמויות-כישור בציטופלסמה; 5–7 שכבות.</li>
-  <li><b>מלאה:</b> הבועיות מתמזגות חזרה לממברנה ושטח הפנים גדל; תאי הביניים נעים הצידה; העובי יורד לחצי (2–3 שכבות); תאי המטרייה נעשים שטוחים.</li>
+  <li><b>ריקה:</b> ה-<i class="en">Mucosa</i> מקופלת; <i class="en">Umbrella cells</i> מקפלים את הממברנה ומכניסים את ה-<i class="en">Plaques</i> לבועיות דמויות-כישור בציטופלסמה; 5–7 שכבות.</li>
+  <li><b>מלאה:</b> הבועיות מתמזגות חזרה לממברנה ושטח הפנים גדל; תאי הביניים נעים הצידה; העובי יורד לחצי (2–3 שכבות); <i class="en">Umbrella cells</i> נעשים שטוחים.</li>
  </ul>
  <div class="mem"><b class="t">ב-ב-מ:</b> בזלי, ביניים, מטרייה. ו-"מטרייה" כי התא פרוש מעל כמה תאים מתחתיו, וכי הוא <b>אטום למים</b> כמו מטרייה.</div>
 </div>
 </div>
 
-<h3>דפנות: גביע/אגן, שופכן, שלפוחית, שופכה</h3>
+<h3>דפנות: <i class="en">Calyx</i>/<i class="en">Renal pelvis</i>, <i class="en">Ureter</i>, <i class="en">Bladder</i>, <i class="en">Urethra</i></h3>
 <div class="grid3">
  <div class="box">
-  <h4>שופכן <i class="en">Ureter</i></h4>
-  <div class="wall"><div class="w-uro">Urothelium (4–5 שכבות)</div><div class="w-lp">Lamina propria (רקמת חיבור, קפלים → לומן כוכבי)</div><div class="w-m">Muscularis: פנימית אורכית + חיצונית היקפית (+ אורכית חיצונית בשליש התחתון)</div><div class="w-adv">Adventitia</div></div>
-  <p style="font-size:14px"><b>אין סאב-מוקוזה.</b> שריר דק יחסית. הלומן הכוכבי הוא הסימן המזהה בהגדלה נמוכה.</p>
+  <h4><i class="en">Ureter</i></h4>
+  <div class="wall"><div class="w-uro">Urothelium (4–5 שכבות)</div><div class="w-lp">Lamina propria (<i class="en">Connective tissue</i>, קפלים → לומן כוכבי)</div><div class="w-m">Muscularis: פנימית אורכית + חיצונית היקפית (+ אורכית חיצונית בשליש התחתון)</div><div class="w-adv">Adventitia</div></div>
+  <p style="font-size:14px"><b>אין <i class="en">Submucosa</i>.</b> שריר דק יחסית. הלומן הכוכבי הוא הסימן המזהה בהגדלה נמוכה.</p>
  </div>
  <div class="box">
-  <h4>שלפוחית <i class="en">Bladder</i></h4>
-  <div class="wall"><div class="w-uro">Urothelium (5–7 ריקה / 2–3 מלאה), תאי מטרייה גדולים</div><div class="w-lp">Lamina propria</div><div class="w-sub">Submucosa (רקמת חיבור צפופה, מאוד מכולית)</div><div class="w-m">Detrusor: 3 שכבות שריר חלק לא מוגדרות (IL · ML · OL)</div><div class="w-adv">Adventitia (ועל הגג: Serosa)</div></div>
-  <p style="font-size:14px">שריר <b>עבה מאוד</b> בצרורות לכל הכיוונים. השופכנים חוצים את הדופן באלכסון = שסתום.</p>
+  <h4><i class="en">Bladder</i></h4>
+  <div class="wall"><div class="w-uro">Urothelium (5–7 ריקה / 2–3 מלאה), <i class="en">Umbrella cells</i> גדולים</div><div class="w-lp">Lamina propria</div><div class="w-sub">Submucosa (<i class="en">Connective tissue</i> צפופה, מאוד מכולית)</div><div class="w-m">Detrusor: 3 שכבות <i class="en">Smooth muscle</i> לא מוגדרות (IL · ML · OL)</div><div class="w-adv">Adventitia (ועל הגג: Serosa)</div></div>
+  <p style="font-size:14px">שריר <b>עבה מאוד</b> בצרורות לכל הכיוונים. ה-<i class="en">Ureters</i> חוצים את הדופן באלכסון = שסתום.</p>
  </div>
  <div class="box">
-  <h4>שופכה <i class="en">Urethra</i></h4>
-  <div class="wall"><div class="w-uro" style="background:linear-gradient(90deg,var(--uro),var(--strat))">אפיתל משתנה לאורך: מעבר → רב-שכבתי/פסאודו-סטרטיפיקציה גלילי → קשקשי</div><div class="w-lp">Lamina propria עם קפלים אורכיים ובלוטות Littré</div><div class="w-m">שריר חלק; סוגר חיצוני משורטט בחלק האמצעי</div></div>
-  <p style="font-size:14px">גבר: פרוסטטי (אורותל) · ממברנוזי · ספוגי. אישה: 3–5 ס"מ, רובה כבר קשקשי לא מקורנן.</p>
+  <h4><i class="en">Urethra</i></h4>
+  <div class="wall"><div class="w-uro" style="background:linear-gradient(90deg,var(--uro),var(--strat))">אפיתל משתנה לאורך: מעבר → <i class="en">Stratified</i>/<i class="en">Pseudostratified columnar</i> → <i class="en">Squamous</i></div><div class="w-lp">Lamina propria עם קפלים אורכיים ובלוטות Littré</div><div class="w-m"><i class="en">Smooth muscle</i>; <i class="en">External striated sphincter</i> בחלק האמצעי</div></div>
+  <p style="font-size:14px">גבר: פרוסטטי (<i class="en">Urothelium</i>) · ממברנוזי · ספוגי. אישה: 3–5 ס"מ, רובה כבר <i class="en">Squamous</i> לא מקורנן.</p>
  </div>
 </div>
 <div class="grid2">
- <div class="mem"><b class="t">שופכן הפוך מהמעי:</b> במעי אורכי בחוץ והיקפי בפנים; בשופכן <b>אורכי בפנים</b> והיקפי בחוץ. הגיוני: הפריסטלטיקה "חולבת" את השופכן מבחוץ.</div>
- <div class="mem"><b class="t">שופכן או שלפוחית בחתך?</b> שופכן = קטן, עגול, לומן כוכבי, שריר דק, בלי סאב-מוקוזה. שלפוחית = גדולה, קפלים רחבים, סאב-מוקוזה, שריר עבה מאוד בכל הכיוונים.</div>
+ <div class="mem"><b class="t"><i class="en">Ureter</i> הפוך מהמעי:</b> במעי אורכי בחוץ והיקפי בפנים; ב-<i class="en">Ureter</i> <b>אורכי בפנים</b> והיקפי בחוץ. הגיוני: הפריסטלטיקה "חולבת" את ה-<i class="en">Ureter</i> מבחוץ.</div>
+ <div class="mem"><b class="t"><i class="en">Ureter</i> או <i class="en">Bladder</i> בחתך?</b> <i class="en">Ureter</i> = קטן, עגול, לומן כוכבי, שריר דק, בלי <i class="en">Submucosa</i>. <i class="en">Bladder</i> = גדולה, קפלים רחבים, <i class="en">Submucosa</i>, שריר עבה מאוד בכל הכיוונים.</div>
 </div>
 
 <div class="figs">
- <figure class="fig"><img src="img/umbrella-cells.jpg" alt=""><figcaption><b>אורותל:</b> חצים צהובים = תאי מטרייה קמורים בשכבה השטחית.<span class="credit">חומרי הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-bladder-he-uroplakin.jpg" alt=""><figcaption><b>שלפוחית:</b> (a) U = אורותל, LP, S = סאב-מוקוזה, IL/ML/OL = שלוש שכבות הדטרוזור, A = אדוונטיציה. (b) צביעה אימונית ל-uroplakin (חום) בשכבה השטחית בלבד. (c) שלפוחית מלאה: אפיתל דק.<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
- <figure class="fig"><img src="img/s-transitional-states.jpg" alt=""><figcaption><b>אפיתל מעבר מכווץ (שמאל) לעומת מתוח (ימין).</b><span class="credit">מצגת הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-ureter.jpg" alt=""><figcaption><b>שופכן בחתך רוחב:</b> לומן כוכבי, מוקוזה (אפיתל מעבר + lamina propria), מוסקולריס (Mu), אדוונטיציה (A).<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
- <figure class="fig"><img src="img/s-ureter-highmag.jpg" alt=""><figcaption><b>שופכן בהגדלה:</b> אורותל עם תאי מטרייה, מתחתיו lamina propria, ומסביב שריר חלק ואדוונטיציה.<span class="credit">מצגת הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/bladder.jpg" alt=""><figcaption><b>דופן השלפוחית:</b> אורותל מקופל, lamina propria, סאב-מוקוזה, ומוסקולריס עבה מאוד עם צרורות בכיוונים שונים.<span class="credit">חומרי הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-bladder-netter.jpg" alt=""><figcaption><b>Netter, דופן השלפוחית:</b> אפיתל מעבר, lamina propria, שכבות שריר, אדוונטיציה/סרוזה.<span class="credit">מצגת הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-urethra-he.jpg" alt=""><figcaption><b>שופכה:</b> לומן (L) עם קפלים אורכיים עמוקים; האפיתל (E) רב-שכבתי גלילי / פסאודו-סטרטיפיקציה.<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
- <figure class="fig"><img src="img/s-male-urethra.jpg" alt=""><figcaption><b>שופכה גברית:</b> צוואר השלפוחית → סוגר פנימי → שופכה פרוסטטית → ממברנוזית → ספוגית בתוך corpus spongiosum.<span class="credit">מצגת הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-female-urethra.jpg" alt=""><figcaption><b>שופכה נשית:</b> קצרה, מוקפת בשריר levator ani ובסוגר החיצוני, נפתחת בין השפתיים הקטנות; בלוטות שופכה קטנות לאורכה.<span class="credit">מצגת הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/umbrella-cells.jpg" alt=""><figcaption><b><i class="en">Urothelium</i>:</b> חצים צהובים = <i class="en">Umbrella cells</i> קמורים בשכבה השטחית.<span class="credit">חומרי הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-bladder-he-uroplakin.jpg" alt=""><figcaption><b><i class="en">Bladder</i>:</b> (a) U = <i class="en">Urothelium</i>, LP, S = <i class="en">Submucosa</i>, IL/ML/OL = שלוש שכבות ה-<i class="en">Detrusor</i>, A = <i class="en">Adventitia</i>. (b) צביעה אימונית ל-uroplakin (חום) בשכבה השטחית בלבד. (c) <i class="en">Bladder</i> מלאה: אפיתל דק.<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-transitional-states.jpg" alt=""><figcaption><b><i class="en">Urothelium</i> מכווץ (שמאל) לעומת מתוח (ימין).</b><span class="credit">מצגת הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-ureter.jpg" alt=""><figcaption><b><i class="en">Ureter</i> בחתך רוחב:</b> לומן כוכבי, <i class="en">Mucosa</i> (<i class="en">Urothelium</i> + lamina propria), <i class="en">Muscularis</i> (Mu), <i class="en">Adventitia</i> (A).<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-ureter-highmag.jpg" alt=""><figcaption><b><i class="en">Ureter</i> בהגדלה:</b> <i class="en">Urothelium</i> עם <i class="en">Umbrella cells</i>, מתחתיו lamina propria, ומסביב <i class="en">Smooth muscle</i> ו-<i class="en">Adventitia</i>.<span class="credit">מצגת הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/bladder.jpg" alt=""><figcaption><b>דופן ה-<i class="en">Bladder</i>:</b> <i class="en">Urothelium</i> מקופל, lamina propria, <i class="en">Submucosa</i>, ו-<i class="en">Muscularis</i> עבה מאוד עם צרורות בכיוונים שונים.<span class="credit">חומרי הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-bladder-netter.jpg" alt=""><figcaption><b>Netter, דופן ה-<i class="en">Bladder</i>:</b> <i class="en">Urothelium</i>, lamina propria, שכבות שריר, <i class="en">Adventitia</i>/<i class="en">Serosa</i>.<span class="credit">מצגת הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-urethra-he.jpg" alt=""><figcaption><b><i class="en">Urethra</i>:</b> לומן (L) עם קפלים אורכיים עמוקים; האפיתל (E) <i class="en">Stratified columnar</i> / <i class="en">Pseudostratified</i>.<span class="credit">מצגת הקורס / Junqueira</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-male-urethra.jpg" alt=""><figcaption><b><i class="en">Urethra</i> גברית:</b> צוואר ה-<i class="en">Bladder</i> → סוגר פנימי → <i class="en">Urethra</i> פרוסטטית → ממברנוזית → ספוגית בתוך corpus spongiosum.<span class="credit">מצגת הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-female-urethra.jpg" alt=""><figcaption><b><i class="en">Urethra</i> נשית:</b> קצרה, מוקפת בשריר levator ani ובסוגר החיצוני, נפתחת בין השפתיים הקטנות; בלוטות <i class="en">Urethra</i> קטנות לאורכה.<span class="credit">מצגת הקורס</span></figcaption></figure>
 </div>
 </section>
 
@@ -881,33 +854,33 @@ summary{cursor:pointer;font-weight:600;font-size:16px}
 <h2>9. מפת האפיתל לאורך מערכת השתן <span class="en">Epithelium map</span><span class="key">חובה</span></h2>
 <table>
  <tr><th>#</th><th>מבנה</th><th>אפיתל</th><th>למה דווקא זה</th></tr>
- <tr><td>1</td><td>קופסית באומן, עלה פריאטלי</td><td><i class="en">Simple squamous</i></td><td>רק דופן; לא צריך לעבוד</td></tr>
- <tr><td>2</td><td>קופסית באומן, עלה ויסצרלי</td><td><i class="en">Podocytes</i> (אפיתל מיוחד)</td><td>רגליות + סדקי סינון</td></tr>
+ <tr><td>1</td><td><i class="en">Bowman's capsule</i>, עלה פריאטלי</td><td><i class="en">Simple squamous</i></td><td>רק דופן; לא צריך לעבוד</td></tr>
+ <tr><td>2</td><td><i class="en">Bowman's capsule</i>, עלה ויסצרלי</td><td><i class="en">Podocytes</i> (אפיתל מיוחד)</td><td><i class="en">Pedicels</i> + <i class="en">Filtration slits</i></td></tr>
  <tr><td>3</td><td>PCT, PST</td><td><i class="en">Simple cuboidal</i> + <b>brush border</b></td><td>שטח פנים ענק לספיגה</td></tr>
- <tr><td>4</td><td>זרועות דקות של הלולאה</td><td><i class="en">Simple squamous</i></td><td>מעבר פסיבי של מים/NaCl</td></tr>
- <tr><td>5</td><td>TAL</td><td><i class="en">Simple cuboidal</i>, בלי מברשת, עשיר במיטוכונדריות</td><td>שאיבה אקטיבית, אטום למים</td></tr>
+ <tr><td>4</td><td><i class="en">Thin limbs</i> של הלולאה</td><td><i class="en">Simple squamous</i></td><td>מעבר פסיבי של מים/NaCl</td></tr>
+ <tr><td>5</td><td>TAL</td><td><i class="en">Simple cuboidal</i>, בלי <i class="en">Brush border</i>, עשיר ב-<i class="en">Mitochondria</i></td><td>שאיבה אקטיבית, אטום למים</td></tr>
  <tr><td>6</td><td>Macula densa</td><td><i class="en">Simple columnar</i> צפוף (תאים מוארכים)</td><td>חיישן</td></tr>
- <tr><td>7</td><td>DCT</td><td><i class="en">Simple cuboidal</i>, בלי מברשת</td><td>כוונון אלקטרוליטים</td></tr>
- <tr><td>8</td><td>CD קליפתי</td><td><i class="en">Simple cuboidal</i> (עיקריים + משולבים)</td><td>כוונון מים/Na⁺/pH</td></tr>
- <tr><td>9</td><td>CD לשדי, papillary duct</td><td><i class="en">Simple columnar</i></td><td>צינורות גדולים</td></tr>
- <tr><td>10</td><td>גביעים, אגן, שופכן, שלפוחית</td><td><i class="en">Urothelium (transitional)</i></td><td>מחסום לשתן היפרטוני + מתיחה</td></tr>
- <tr><td>11</td><td>שופכה פרוסטטית</td><td><i class="en">Urothelium</i></td><td>המשך השלפוחית</td></tr>
- <tr><td>12</td><td>שופכה ממברנוזית וספוגית</td><td><i class="en">Stratified / pseudostratified columnar</i></td><td>אזור מעבר</td></tr>
- <tr><td>13</td><td>קצה השופכה (גבר), רוב השופכה הנשית</td><td><i class="en">Non-keratinized stratified squamous</i></td><td>המשך העור/רירית</td></tr>
+ <tr><td>7</td><td>DCT</td><td><i class="en">Simple cuboidal</i>, בלי <i class="en">Brush border</i></td><td>כוונון אלקטרוליטים</td></tr>
+ <tr><td>8</td><td>CD <i class="en">Cortical</i></td><td><i class="en">Simple cuboidal</i> (עיקריים + משולבים)</td><td>כוונון מים/Na⁺/pH</td></tr>
+ <tr><td>9</td><td>CD <i class="en">Medullary</i>, papillary duct</td><td><i class="en">Simple columnar</i></td><td>צינורות גדולים</td></tr>
+ <tr><td>10</td><td><i class="en">Calyces</i>, <i class="en">Renal pelvis</i>, <i class="en">Ureter</i>, <i class="en">Bladder</i></td><td><i class="en">Urothelium (transitional)</i></td><td>מחסום לשתן היפרטוני + מתיחה</td></tr>
+ <tr><td>11</td><td><i class="en">Urethra</i> פרוסטטית</td><td><i class="en">Urothelium</i></td><td>המשך ה-<i class="en">Bladder</i></td></tr>
+ <tr><td>12</td><td><i class="en">Urethra</i> ממברנוזית וספוגית</td><td><i class="en">Stratified / pseudostratified columnar</i></td><td>אזור מעבר</td></tr>
+ <tr><td>13</td><td>קצה ה-<i class="en">Urethra</i> (גבר), רוב ה-<i class="en">Urethra</i> הנשית</td><td><i class="en">Non-keratinized stratified squamous</i></td><td>המשך העור/רירית</td></tr>
 </table>
-<div class="mem"><b class="t">הגיון במקום שינון:</b> <b>שטוח</b> איפה שעוברים פסיבית (קופסית, זרועות דקות). <b>קובואידלי</b> איפה שעובדים קשה (PCT עם מברשת, TAL, DCT, CD). <b>גלילי</b> כשהצינור גדל (CD לשדי). <b>מעבר</b> כשצריך לאגור שתן ולהימתח. <b>קשקשי רב-שכבתי</b> כשיוצאים לעולם.</div>
+<div class="mem"><b class="t">הגיון במקום שינון:</b> <b>שטוח</b> איפה שעוברים פסיבית (<i class="en">Bowman's capsule</i>, <i class="en">Thin limbs</i>). <b><i class="en">Cuboidal</i></b> איפה שעובדים קשה (PCT עם <i class="en">Brush border</i>, TAL, DCT, CD). <b><i class="en">Columnar</i></b> כשהצינור גדל (CD <i class="en">Medullary</i>). <b>מעבר</b> כשצריך לאגור שתן ולהימתח. <b><i class="en">Stratified squamous</i></b> כשיוצאים לעולם.</div>
 
 <h3>חזרה: סוגי אפיתל ומיקומם בגוף</h3>
 <table>
  <tr><th>סוג</th><th>איך מזהים (הגרעינים!)</th><th>דוגמאות</th></tr>
- <tr><td><i class="en">Simple squamous</i></td><td>שורה אחת של גרעינים שטוחים "כמו ביצת עין"</td><td>אנדותל, מזותל, עלה פריאטלי של באומן, זרועות דקות, נאדיות הריאה</td></tr>
+ <tr><td><i class="en">Simple squamous</i></td><td>שורה אחת של גרעינים שטוחים "כמו ביצת עין"</td><td><i class="en">Endothelium</i>, מזותל, עלה פריאטלי של באומן, <i class="en">Thin limbs</i>, נאדיות הריאה</td></tr>
  <tr><td><i class="en">Simple cuboidal</i></td><td>גרעינים עגולים במרכז תאים מרובעים</td><td>צינוריות הכליה, זקיקי תירואיד, צינורות בלוטות קטנים, פני השחלה</td></tr>
- <tr><td><i class="en">Simple columnar</i></td><td>גרעינים מוארכים, בזליים, בשורה</td><td>קיבה, מעי (עם microvilli וגביעיות), כיס מרה, רחם (ריסני)</td></tr>
- <tr><td><i class="en">Pseudostratified columnar</i></td><td>גרעינים בגבהים שונים אבל כל התאים נוגעים בבסיס</td><td>קנה וברונכים (ריסני, עם גביעיות), אפידידימיס (סטריאוציליה), חלקי שופכה גברית</td></tr>
+ <tr><td><i class="en">Simple columnar</i></td><td>גרעינים מוארכים, בזליים, בשורה</td><td>קיבה, מעי (עם microvilli וגביעיות), כיס מרה, רחם (<i class="en">Ciliated</i>)</td></tr>
+ <tr><td><i class="en">Pseudostratified columnar</i></td><td>גרעינים בגבהים שונים אבל כל התאים נוגעים בבסיס</td><td>קנה וברונכים (<i class="en">Ciliated</i>, עם גביעיות), אפידידימיס (סטריאוציליה), חלקי <i class="en">Urethra</i> גברית</td></tr>
  <tr><td><i class="en">Stratified squamous keratinized</i></td><td>שכבות, למעלה קשקשים בלי גרעינים</td><td>עור</td></tr>
- <tr><td><i class="en">Stratified squamous non-keratinized</i></td><td>שכבות, גרעינים עד לפני השטח</td><td>פה, ושט, נרתיק, קרנית, שופכה דיסטלית</td></tr>
- <tr><td><i class="en">Stratified cuboidal / columnar</i></td><td>2–3 שכבות</td><td>צינורות בלוטות הזיעה וצינורות הפרשה גדולים, לחמית, שופכה גברית</td></tr>
- <tr><td><i class="en">Transitional (urothelium)</i></td><td>תאי מטרייה קמורים, גדולים, לעיתים דו-גרעיניים</td><td>גביעים, אגן, שופכן, שלפוחית, שופכה פרוסטטית</td></tr>
+ <tr><td><i class="en">Stratified squamous non-keratinized</i></td><td>שכבות, גרעינים עד לפני השטח</td><td>פה, ושט, נרתיק, קרנית, <i class="en">Urethra</i> דיסטלית</td></tr>
+ <tr><td><i class="en">Stratified cuboidal / columnar</i></td><td>2–3 שכבות</td><td>צינורות בלוטות הזיעה וצינורות הפרשה גדולים, לחמית, <i class="en">Urethra</i> גברית</td></tr>
+ <tr><td><i class="en">Transitional (urothelium)</i></td><td><i class="en">Umbrella cells</i> קמורים, גדולים, לעיתים דו-גרעיניים</td><td><i class="en">Calyces</i>, <i class="en">Renal pelvis</i>, <i class="en">Ureter</i>, <i class="en">Bladder</i>, <i class="en">Urethra</i> פרוסטטית</td></tr>
 </table>
 </section>
 
@@ -918,20 +891,20 @@ summary{cursor:pointer;font-weight:600;font-size:16px}
 
 <details open><summary>זיהוי רקמה ב-H&amp;E: "התשובה בגרעינים" <span class="key">חובה</span></summary>
 <ul>
- <li><b>צורה:</b> שטוח = קשקשי / אנדותל; עגול = קובואידלי; מוארך ניצב = גלילי; "סיגר" מרכזי = שריר חלק; היקפיים ומרובים = שריר שלד; מרכזי יחיד + דיסקים = שריר לב; פיברובלסט = מוארך וכהה בין סיבים.</li>
+ <li><b>צורה:</b> שטוח = <i class="en">Squamous</i> / <i class="en">Endothelium</i>; עגול = <i class="en">Cuboidal</i>; מוארך ניצב = <i class="en">Columnar</i>; "סיגר" מרכזי = <i class="en">Smooth muscle</i>; היקפיים ומרובים = שריר שלד; מרכזי יחיד + דיסקים = שריר לב; פיברובלסט = מוארך וכהה בין סיבים.</li>
  <li><b>כמות וצפיפות בחתך:</b> מעט = תאים גדולים (PCT, הפטוציטים); הרבה = תאים קטנים (DCT, לימפוציטים).</li>
- <li><b>סידור:</b> שורה אחת = פשוט; גבהים שונים עם בסיס משותף = פסאודו-סטרטיפיקציה; שכבות אמיתיות = רב-שכבתי; תאים גדולים מקומרים למעלה = מעבר.</li>
+ <li><b>סידור:</b> שורה אחת = פשוט; גבהים שונים עם בסיס משותף = <i class="en">Pseudostratified</i>; שכבות אמיתיות = <i class="en">Stratified</i>; תאים גדולים מקומרים למעלה = מעבר.</li>
  <li><b>כרומטין:</b> לימפוציט = עגול כהה מאוד; תא פלזמה = "שעון" אקסצנטרי; נויטרופיל = מקוטע.</li>
 </ul></details>
 
 <details><summary>מגעים בין-תאיים <span class="en">Cell junctions</span></summary>
 <table>
  <tr><th>מגע</th><th>חלבונים</th><th>מחובר ל…</th><th>תפקיד</th></tr>
- <tr><td><i class="en">Tight junction (zonula occludens)</i></td><td>Claudins, Occludin</td><td>אקטין</td><td>אוטם את המרווח הבין-תאי; קוטביות (קריטי באורותל ובצינוריות)</td></tr>
+ <tr><td><i class="en">Tight junction (zonula occludens)</i></td><td>Claudins, Occludin</td><td>אקטין</td><td>אוטם את המרווח הבין-תאי; קוטביות (קריטי ב-<i class="en">Urothelium</i> ובצינוריות)</td></tr>
  <tr><td><i class="en">Adherens junction (zonula adherens)</i></td><td>E-cadherin, catenins</td><td>אקטין</td><td>חגורת הידבקות</td></tr>
  <tr><td><i class="en">Desmosome (macula adherens)</i></td><td>Desmogleins/desmocollins</td><td>סיבי ביניים (קרטין)</td><td>נקודות הידבקות חזקות (עור, לב)</td></tr>
- <tr><td><i class="en">Hemidesmosome</i></td><td>Integrins</td><td>סיבי ביניים → ממברנת בסיס</td><td>עיגון לבסיס</td></tr>
- <tr><td><i class="en">Gap junction</i></td><td>Connexins (connexon)</td><td>–</td><td>תקשורת יונית (שריר לב, שריר חלק, עצם)</td></tr>
+ <tr><td><i class="en">Hemidesmosome</i></td><td>Integrins</td><td>סיבי ביניים → <i class="en">Basement membrane</i></td><td>עיגון לבסיס</td></tr>
+ <tr><td><i class="en">Gap junction</i></td><td>Connexins (connexon)</td><td>–</td><td>תקשורת יונית (שריר לב, <i class="en">Smooth muscle</i>, עצם)</td></tr>
 </table>
 <div class="mem"><b class="t">מלמעלה למטה: T-A-D</b> (Tight, Adherens, Desmosome) = "קומפלקס החיבור" באפיתל. Gap ו-Hemidesmosome מחוץ לסדר.</div>
 </details>
@@ -941,18 +914,18 @@ summary{cursor:pointer;font-weight:600;font-size:16px}
  <tr><th>סוג</th><th>איפה</th><th>טריק</th></tr>
  <tr><td>I</td><td>עצם, גיד, דרמיס, דנטין, רצועות, קרנית (90% מהקולגן בגוף)</td><td>"One = bONE"</td></tr>
  <tr><td>II</td><td>סחוס היאליני ואלסטי, גוף זגוגי</td><td>"Two = carTWOlage"</td></tr>
- <tr><td>III</td><td>סיבים רטיקולריים: איברי לימפה, מח עצם, כבד, שריר חלק, כלי דם, רקמת גרנולציה</td><td>"Three = reTHREEcular"</td></tr>
- <tr><td>IV</td><td>ממברנת בסיס (למינה דנסה), <b>GBM</b></td><td>"Four = floor" (רשת, לא סיב)</td></tr>
- <tr><td>VII</td><td>סיבי עיגון של העור (לממברנת הבסיס)</td><td>Anchoring fibrils</td></tr>
+ <tr><td>III</td><td>סיבים רטיקולריים: איברי לימפה, מח עצם, כבד, <i class="en">Smooth muscle</i>, כלי דם, רקמת גרנולציה</td><td>"Three = reTHREEcular"</td></tr>
+ <tr><td>IV</td><td><i class="en">Basement membrane</i> (למינה דנסה), <b>GBM</b></td><td>"Four = floor" (רשת, לא סיב)</td></tr>
+ <tr><td>VII</td><td>סיבי עיגון של העור (ל-<i class="en">Basement membrane</i>)</td><td>Anchoring fibrils</td></tr>
 </table>
 </details>
 
 <details><summary>סוגי נימים ומיקומם <span class="en">Capillary types</span> <span class="key">חובה</span></summary>
 <table>
  <tr><th>סוג</th><th>מבנה</th><th>איפה</th></tr>
- <tr><td><i class="en">Continuous</i></td><td>אנדותל רציף, ממברנת בסיס רציפה, בועיות פינוציטוזה; במוח גם tight junctions (BBB)</td><td>שריר, רקמת חיבור, ריאה, עור, מוח, תימוס</td></tr>
- <tr><td><i class="en">Fenestrated</i></td><td>חלונות (60–80 ננומטר) באנדותל, ממברנת בסיס רציפה; בגלומרולוס החלונות <b>בלי דיאפרגמה</b></td><td><b>גלומרולוס, נימים פריטובולריים, vasa recta</b>, בלוטות אנדוקריניות, רירית המעי, choroid plexus</td></tr>
- <tr><td><i class="en">Sinusoidal (discontinuous)</i></td><td>רווחים גדולים בין תאים ובממברנת הבסיס, לומן רחב ולא סדיר</td><td>כבד, טחול, מח עצם, בלוטות אנדוקריניות מסוימות</td></tr>
+ <tr><td><i class="en">Continuous</i></td><td><i class="en">Endothelium</i> רציף, <i class="en">Basement membrane</i> רציפה, בועיות פינוציטוזה; במוח גם tight junctions (BBB)</td><td>שריר, <i class="en">Connective tissue</i>, ריאה, עור, מוח, תימוס</td></tr>
+ <tr><td><i class="en">Fenestrated</i></td><td>חלונות (60–80 ננומטר) ב-<i class="en">Endothelium</i>, <i class="en">Basement membrane</i> רציפה; ב-<i class="en">Glomerulus</i> החלונות <b>בלי דיאפרגמה</b></td><td><b><i class="en">Glomerulus</i>, <i class="en">Peritubular capillaries</i>, vasa recta</b>, בלוטות אנדוקריניות, רירית המעי, choroid plexus</td></tr>
+ <tr><td><i class="en">Sinusoidal (discontinuous)</i></td><td>רווחים גדולים בין תאים וב-<i class="en">Basement membrane</i>, לומן רחב ולא סדיר</td><td>כבד, טחול, מח עצם, בלוטות אנדוקריניות מסוימות</td></tr>
 </table>
 </details>
 
@@ -964,15 +937,15 @@ summary{cursor:pointer;font-weight:600;font-size:16px}
  <tr><td><i class="en">Langerhans cells</i></td><td>אפידרמיס (מציגי אנטיגן)</td></tr>
  <tr><td><i class="en">Osteoclasts</i></td><td>עצם (רב-גרעיניים, מונוציטים מאוחים)</td></tr>
  <tr><td><i class="en">Microglia</i></td><td>מערכת העצבים המרכזית</td></tr>
- <tr><td><i class="en">Mesangial cells</i></td><td>גלומרולוס (פגוציטוזה של אגרגטים)</td></tr>
+ <tr><td><i class="en">Mesangial cells</i></td><td><i class="en">Glomerulus</i> (פגוציטוזה של אגרגטים)</td></tr>
 </table>
-<p style="font-size:14px">כולם (חוץ ממזנגיאליים) נגזרים ממונוציטים = מערכת הפגוציטים החד-גרעיניים.</p>
+<p style="font-size:14px">כולם (חוץ מ-<i class="en">Mesangial</i>) נגזרים ממונוציטים = מערכת הפגוציטים החד-גרעיניים.</p>
 </details>
 
 <details><summary>תאי גזע, התחדשות ומטאפלזיה</summary>
 <ul>
- <li><b>תאי גזע ברקמות:</b> שכבה בזלית (אפידרמיס, אורותל), תאי הקריפטות (מעי), תאי לוויין (שריר שלד), תאי גזע המטופויטיים (מח עצם), תאים אובליים (כבד). רקמות "לא מתחדשות": נוירונים, שריר לב.</li>
- <li><b>מטאפלזיה</b> <i class="en">(Metaplasia)</i>: החלפה <b>הפיכה</b> של סוג תא בוגר אחד באחר, בתגובה לגירוי כרוני. דוגמאות: קנה של מעשנים (ריסני → קשקשי), ושט ע"ש Barrett (קשקשי → גלילי), <b>שלפוחית</b> בגירוי כרוני/אבנים/שיסטוזומה (אורותל → קשקשי). הסיכון: מצע לדיספלזיה וסרטן.</li>
+ <li><b>תאי גזע ברקמות:</b> שכבה בזלית (אפידרמיס, <i class="en">Urothelium</i>), תאי הקריפטות (מעי), תאי לוויין (שריר שלד), תאי גזע המטופויטיים (מח עצם), תאים אובליים (כבד). רקמות "לא מתחדשות": נוירונים, שריר לב.</li>
+ <li><b>מטאפלזיה</b> <i class="en">(Metaplasia)</i>: החלפה <b>הפיכה</b> של סוג תא בוגר אחד באחר, בתגובה לגירוי כרוני. דוגמאות: קנה של מעשנים (<i class="en">Ciliated</i> → <i class="en">Squamous</i>), ושט ע"ש Barrett (<i class="en">Squamous</i> → <i class="en">Columnar</i>), <b><i class="en">Bladder</i></b> בגירוי כרוני/אבנים/שיסטוזומה (<i class="en">Urothelium</i> → <i class="en">Squamous</i>). הסיכון: מצע לדיספלזיה וסרטן.</li>
 </ul>
 </details>
 </section>
@@ -982,17 +955,17 @@ summary{cursor:pointer;font-weight:600;font-size:16px}
 <h2>11. קליניקה בקצרה (רק מה שהופיע בשקפים) <span class="en">Clinical correlates</span></h2>
 <table>
  <tr><th>מצב</th><th>מה נפגע</th><th>מה רואים</th></tr>
- <tr><td><i class="en">Hematic (RBC) casts</i></td><td>דימום דרך מחסום הסינון</td><td>גלילים של כדוריות אדומות בשתן = מקור גלומרולרי</td></tr>
- <tr><td><i class="en">Glomerulonephritis</i></td><td>דלקת/משקעים אימוניים בגלומרולוס</td><td>גלומרולוס היפר-תאי, לעיתים "סהרונים"; חלבון ודם בשתן</td></tr>
- <tr><td><i class="en">Diabetic kidney disease</i></td><td>מחסום סינון ומזנגיום</td><td>נימים גדושים, <b>שגשוג מזנגיאלי</b>, <b>GBM מעובה</b> (עד גושים נודולריים)</td></tr>
- <tr><td><i class="en">Interstitial nephritis</i></td><td>אינטרסטיציום (תרופות, זיהום)</td><td>הסננה דלקתית בין הצינוריות</td></tr>
- <tr><td><i class="en">Acute kidney injury (ATN)</i></td><td>תאי PCT (איסכמיה/רעלנים)</td><td>אפיתל שטוח ונמק, אובדן גבול המברשת, גלילים בלומן</td></tr>
- <tr><td><i class="en">Urate nephropathy</i></td><td>צינוריות ואינטרסטיציום</td><td>גבישי אוראט בצינוריות ותגובה דלקתית</td></tr>
+ <tr><td><i class="en">Hematic (RBC) casts</i></td><td>דימום דרך <i class="en">Filtration barrier</i></td><td>גלילים של כדוריות אדומות בשתן = מקור גלומרולרי</td></tr>
+ <tr><td><i class="en">Glomerulonephritis</i></td><td>דלקת/משקעים אימוניים ב-<i class="en">Glomerulus</i></td><td><i class="en">Glomerulus</i> היפר-תאי, לעיתים "סהרונים"; חלבון ודם בשתן</td></tr>
+ <tr><td><i class="en">Diabetic kidney disease</i></td><td><i class="en">Filtration barrier</i> ו-<i class="en">Mesangium</i></td><td>נימים גדושים, <b>שגשוג <i class="en">Mesangial</i></b>, <b>GBM מעובה</b> (עד גושים נודולריים)</td></tr>
+ <tr><td><i class="en">Interstitial nephritis</i></td><td><i class="en">Interstitium</i> (תרופות, זיהום)</td><td>הסננה דלקתית בין הצינוריות</td></tr>
+ <tr><td><i class="en">Acute kidney injury (ATN)</i></td><td>תאי PCT (איסכמיה/רעלנים)</td><td>אפיתל שטוח ונמק, אובדן <i class="en">Brush border</i>, גלילים בלומן</td></tr>
+ <tr><td><i class="en">Urate nephropathy</i></td><td>צינוריות ו-<i class="en">Interstitium</i></td><td>גבישי אוראט בצינוריות ותגובה דלקתית</td></tr>
 </table>
 <div class="figs">
- <figure class="fig"><img src="img/s-hematic-casts.jpg" alt=""><figcaption><b>גלילי RBC בשתן</b>.<span class="credit">מצגת הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-glomerulonephritis.jpg" alt=""><figcaption><b>גלומרולונפריטיס (סכמה):</b> משקעים אימוניים ושגשוג מזנגיאלי.<span class="credit">מצגת הקורס</span></figcaption></figure>
- <figure class="fig"><img src="img/s-diabetic-kd.jpg" alt=""><figcaption><b>כליה סוכרתית (PAS):</b> GBM מעובה ומטריקס מזנגיאלי מוגבר.<span class="credit">מצגת הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-hematic-casts.jpg" alt=""><figcaption><b><i class="en">Columnar</i> RBC בשתן</b>.<span class="credit">מצגת הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-glomerulonephritis.jpg" alt=""><figcaption><b>גלומרולונפריטיס (סכמה):</b> משקעים אימוניים ושגשוג <i class="en">Mesangial</i>.<span class="credit">מצגת הקורס</span></figcaption></figure>
+ <figure class="fig"><img src="img/s-diabetic-kd.jpg" alt=""><figcaption><b>כליה סוכרתית (PAS):</b> GBM מעובה ומטריקס <i class="en">Mesangial</i> מוגבר.<span class="credit">מצגת הקורס</span></figcaption></figure>
  <figure class="fig"><img src="img/s-interstitial-nephritis.jpg" alt=""><figcaption><b>דלקת אינטרסטיציאלית:</b> המון לימפוציטים בין הצינוריות.<span class="credit">מצגת הקורס</span></figcaption></figure>
  <figure class="fig"><img src="img/s-aki.jpg" alt=""><figcaption><b>AKI/ATN:</b> צינוריות עם אפיתל שטוח ופגוע ולומנים מורחבים.<span class="credit">מצגת הקורס</span></figcaption></figure>
  <figure class="fig"><img src="img/s-urate.jpg" alt=""><figcaption><b>נפרופתיה אוראטית:</b> גבישים בצינורית.<span class="credit">מצגת הקורס</span></figcaption></figure>
@@ -1003,26 +976,26 @@ summary{cursor:pointer;font-weight:600;font-size:16px}
 <section id="mems">
 <h2>12. כל הטריקים במקום אחד <span class="en">All mnemonics</span></h2>
 <div class="grid2">
- <div class="mem"><b class="t">אין גופיפים = לשד.</b> גופיף אחד בפינה = עדיין קליפה.</div>
- <div class="mem"><b class="t">אונה = פירמידה; אונית = קרן לשדית + הלבירינת סביבה.</b></div>
- <div class="mem"><b class="t">ג'וקסטה = ג'ירפה:</b> לולאה ארוכה עם זרוע עולה דקה, יורדת ללשד הפנימי, עם vasa recta.</div>
+ <div class="mem"><b class="t">אין <i class="en">Renal corpuscles</i> = <i class="en">Medulla</i>.</b> <i class="en">Renal corpuscle</i> אחד בפינה = עדיין <i class="en">Cortex</i>.</div>
+ <div class="mem"><b class="t"><i class="en">Lobe</i> = <i class="en">Pyramid</i>; <i class="en">Lobule</i> = <i class="en">Medullary ray</i> + ה-<i class="en">Labyrinth</i> סביבה.</b></div>
+ <div class="mem"><b class="t">ג'וקסטה = ג'ירפה:</b> לולאה ארוכה עם <i class="en">Thin ascending limb</i>, יורדת ל-<i class="en">Medulla</i> הפנימי, עם vasa recta.</div>
  <div class="mem"><b class="t">PCT = ורוד, פלומה, מעט גרעינים. DCT = חיוור, ריק, הרבה גרעינים.</b> "קרובה קרובה לסגירה, רחוקה רחבה ופתוחה".</div>
- <div class="mem"><b class="t">בקרן הלשדית, לפי כמה ורוד:</b> PST &gt; TAL &gt; CD.</div>
- <div class="mem"><b class="t">זרוע דקה או כלי?</b> כדוריות אדומות בלומן = כלי דם.</div>
- <div class="mem"><b class="t">מחסום הסינון = 3 F:</b> Fenestrae, Fibrous GBM, Foot processes. בעברית: אנדותל-ממברנה-פודוציט (א-מ-פ).</div>
- <div class="mem"><b class="t">פריאטלי = פשוט ושטוח. פודוציט = "פודו" = רגל.</b></div>
- <div class="mem"><b class="t">מזנגיאלי = 4 תפקידים:</b> תמיכה, כיווץ, פגוציטוזה, הפרשה.</div>
- <div class="mem"><b class="t">JGA:</b> MD = "מד" (מודד מלח). JG = Juice Generator (רנין). Lacis = "לא ברור".</div>
- <div class="mem"><b class="t">רנין:</b> "סימפתטי מעלה; לחץ ומלח מורידים".</div>
+ <div class="mem"><b class="t">ב-<i class="en">Medullary ray</i>, לפי כמה ורוד:</b> PST &gt; TAL &gt; CD.</div>
+ <div class="mem"><b class="t"><i class="en">Thin limb</i> או כלי?</b> כדוריות אדומות בלומן = כלי דם.</div>
+ <div class="mem"><b class="t"><i class="en">Filtration barrier</i> = 3 F:</b> Fenestrae, Fibrous GBM, Foot processes. בעברית: <i class="en">Endothelium</i>-ממברנה-<i class="en">Podocyte</i> (א-מ-פ).</div>
+ <div class="mem"><b class="t">פריאטלי = פשוט ושטוח. <i class="en">Podocyte</i> = "פודו" = רגל.</b></div>
+ <div class="mem"><b class="t"><i class="en">Mesangial</i> = 4 תפקידים:</b> תמיכה, כיווץ, פגוציטוזה, הפרשה.</div>
+ <div class="mem"><b class="t">JGA:</b> MD = "מד" (מודד מלח). JG = Juice Generator (<i class="en">Renin</i>). Lacis = "לא ברור".</div>
+ <div class="mem"><b class="t"><i class="en">Renin</i>:</b> "סימפתטי מעלה; לחץ ומלח מורידים".</div>
  <div class="mem"><b class="t">TG feedback:</b> הרבה מלח → ATP/אדנוזין → כיווץ. מעט מלח → PGE₂/NO → הרחבה.</div>
  <div class="mem"><b class="t">CD:</b> Principal = Pale, Plenty, aquaPorins. Intercalated = Ions, Intense.</div>
  <div class="mem"><b class="t">עורקים:</b> Really Smart Interns Always Identify Arterioles (Renal, Segmental, Interlobar, Arcuate, Interlobular, Afferent).</div>
- <div class="mem"><b class="t">אורותל = ב-ב-מ:</b> בזלי, ביניים, מטרייה. מטרייה = אטומה למים (אורופלקין + tight junctions).</div>
- <div class="mem"><b class="t">שלפוחית ריקה = 5–7 שכבות וקפלים; מלאה = 2–3 שכבות ושטוחה.</b></div>
- <div class="mem"><b class="t">שופכן הפוך מהמעי:</b> אורכי בפנים, היקפי בחוץ. ואין סאב-מוקוזה.</div>
- <div class="mem"><b class="t">שופכה גברית = T-C-C-S:</b> Transitional (פרוסטטי) → Columnar (ממברנוזי) → Columnar (ספוגי) → Squamous (קצה).</div>
- <div class="mem"><b class="t">הגיון האפיתל:</b> שטוח = מעבר פסיבי; קובואידלי = עבודה; גלילי = צינור גדול; מעבר = אגירה ומתיחה; קשקשי רב-שכבתי = יציאה לעולם.</div>
- <div class="mem"><b class="t">מספרים:</b> GFR 125 מ"ל/דקה = 180 ל'/יום; RBF 1 ל'/דקה = 20% CO; שתן 1.5 ל'/יום; קליפה פי 10 מהלשד; GBM עוצרת &gt;70 kDa; סדק סינון 30 ננומטר.</div>
+ <div class="mem"><b class="t"><i class="en">Urothelium</i> = ב-ב-מ:</b> בזלי, ביניים, מטרייה. מטרייה = אטומה למים (<i class="en">Uroplakin</i> + tight junctions).</div>
+ <div class="mem"><b class="t"><i class="en">Bladder</i> ריקה = 5–7 שכבות וקפלים; מלאה = 2–3 שכבות ושטוחה.</b></div>
+ <div class="mem"><b class="t"><i class="en">Ureter</i> הפוך מהמעי:</b> אורכי בפנים, היקפי בחוץ. ואין <i class="en">Submucosa</i>.</div>
+ <div class="mem"><b class="t"><i class="en">Urethra</i> גברית = T-C-C-S:</b> Transitional (פרוסטטי) → Columnar (ממברנוזי) → Columnar (ספוגי) → Squamous (קצה).</div>
+ <div class="mem"><b class="t">הגיון האפיתל:</b> שטוח = מעבר פסיבי; <i class="en">Cuboidal</i> = עבודה; <i class="en">Columnar</i> = צינור גדול; מעבר = אגירה ומתיחה; <i class="en">Stratified squamous</i> = יציאה לעולם.</div>
+ <div class="mem"><b class="t">מספרים:</b> GFR 125 מ"ל/דקה = 180 ל'/יום; RBF 1 ל'/דקה = 20% CO; שתן 1.5 ל'/יום; <i class="en">Cortex</i> פי 10 מ-<i class="en">Medulla</i>; GBM עוצרת &gt;70 kDa; סדק סינון 30 ננומטר.</div>
 </div>
 <p style="text-align:center;margin-top:24px"><a class="cta" href="quiz.html">עכשיו לבוחן: 30 שאלות עם הסברים ←</a></p>
 </section>
