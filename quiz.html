@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>בוחן: היסטולוגיה של מערכת השתן – 30 שאלות</title>
+<style>
+:root{--bg:#f7f5f0;--ink:#1d2430;--muted:#5c6673;--line:#e2ddd3;--accent:#2a6f97;--ok:#2a9d8f;--bad:#c1121f;--en:#1f5f8b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI","Helvetica Neue",Arial,"Noto Sans Hebrew",sans-serif;font-size:16px;line-height:1.55}
+.top{position:sticky;top:0;z-index:20;background:#fffdf9;border-bottom:1px solid var(--line);padding:10px 16px;box-shadow:0 2px 8px rgba(0,0,0,.05);display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.top h1{font-size:19px;margin:0;flex:1 1 auto}
+.top a{color:var(--accent);text-decoration:none;border:1px solid var(--line);border-radius:6px;padding:3px 10px;background:#fff;font-size:14px}
+.btn{border:1px solid var(--line);background:#fff;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:14px}
+.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+select{border:1px solid var(--line);border-radius:8px;padding:5px 8px;font-size:14px;background:#fff}
+main{max-width:900px;margin:0 auto;padding:16px}
+.score{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 16px;margin-bottom:14px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;font-size:15px}
+.score b{font-size:18px}
+.bar{flex:1 1 200px;height:10px;background:#eee;border-radius:5px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--ok);width:0}
+.q{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:0 0 12px}
+.q.hidden{display:none}
+.q .meta{font-size:12px;color:var(--muted);margin-bottom:4px}
+.q .meta span{background:#f1ede4;border-radius:999px;padding:1px 8px;margin-inline-end:6px}
+.q h3{margin:0 0 10px;font-size:16.5px}
+.opts{display:grid;gap:6px}
+.opt{border:1px solid var(--line);border-radius:8px;padding:7px 12px;cursor:pointer;background:#fcfbf8;font-size:15px}
+.opt:hover{border-color:var(--accent)}
+.q.done .opt{cursor:default}
+.opt.correct{background:#e6f4f1;border-color:var(--ok);font-weight:600}
+.opt.wrong{background:#fdecec;border-color:var(--bad)}
+.exp{display:none;margin-top:10px;font-size:14.5px;background:#fff8ec;border:1px solid #f0d9b4;border-radius:8px;padding:8px 12px}
+.q.done .exp{display:block}
+.exp::before{content:"הסבר: ";font-weight:700;color:#9a5b00}
+.en{direction:ltr;unicode-bidi:isolate;color:var(--en);font-weight:600}
+.en.plain{font-weight:400;color:inherit}
+.final{background:#fff;border:2px solid var(--accent);border-radius:12px;padding:14px 18px;margin:16px 0;display:none}
+</style>
+</head>
+<body>
+<div class="top">
+ <h1>בוחן: היסטולוגיה של מערכת השתן <small style="font-weight:400;color:var(--muted);font-size:13px">30 שאלות ברירה · משוב מיידי</small></h1>
+ <select id="topic"><option value="all">כל הנושאים</option></select>
+ <button class="btn" id="shuffle">ערבב סדר</button>
+ <button class="btn" id="reset">התחל מחדש</button>
+ <a href="index.html">← חזרה לסיכום</a>
+</div>
+<main>
+ <div class="score">
+  <div>נענו: <b id="answered">0</b>/<span id="total">30</span></div>
+  <div>נכונות: <b id="correct" style="color:var(--ok)">0</b></div>
+  <div class="bar"><i id="bar"></i></div>
+  <button class="btn" id="showAll">הצג הסברים לכל השאלות</button>
+ </div>
+ <div id="quiz"></div>
+ <div class="final" id="final"></div>
+</main>
+
+<script>
+// topic keys: gross, corpuscle, tubules, jga, cd, blood, lower, epi
+const Q=[
+{t:'gross',q:'איזה מבנה נמצא בקליפת הכליה ולעולם לא בלשד?',o:['גופיף הכליה (Renal corpuscle)','זרוע עולה עבה של לולאת הנלה','צינור מאסף','Vasa recta'],a:0,e:'כל הגופיפים (גלומרולוס + קופסית באומן) נמצאים בקליפה. זה הסימן המהיר ביותר להבדיל קליפה מלשד: בלשד אין גופיפים.'},
+{t:'gross',q:'מהי אונית כלייתית (Renal lobule)?',o:['פירמידה אחת עם הקליפה שמעליה','קרן לשדית אחת עם הלבירינת הקליפתי שסביבה','גלומרולוס אחד עם הצינוריות שלו','גביע קטן אחד עם הפפילה שלו'],a:1,e:'אונה (lobe) = פירמידה + הקליפה שמעליה. אונית (lobule) = medullary ray אחת + ה-cortical labyrinth סביבה; במרכזה צינור מאסף.'},
+{t:'gross',q:'מה מאפיין נפרון ג\'וקסטה-מדולרי לעומת נפרון קורטיקלי?',o:['הגופיף שלו נמצא בלשד','אין לו לולאת הנלה','יש לו זרוע עולה דקה והלולאה נכנסת ללשד הפנימי','הצינורית הפרוקסימלית שלו ארוכה יותר'],a:2,e:'הגופיף תמיד בקליפה (כאן קרוב לגבול קליפה-לשד). הלולאה ארוכה, כוללת thin ascending limb, יורדת ללשד הפנימי ומלווה ב-vasa recta. הצינורית הפרוקסימלית דווקא קצרה יותר.'},
+{t:'corpuscle',q:'איזה אפיתל מצפה את העלה הפריאטלי של קופסית באומן?',o:['קובואידלי פשוט','קשקשי פשוט','פודוציטים','אפיתל מעבר'],a:1,e:'העלה הפריאטלי הוא simple squamous. העלה הויסצרלי בנוי מפודוציטים. בקוטב השתן האפיתל הופך לקובואידלי פשוט של ה-PCT.'},
+{t:'corpuscle',q:'מהו הסדר הנכון של שכבות מחסום הסינון, מהדם אל חלל באומן?',o:['GBM → אנדותל מחורר → דיאפרגמת סדק','אנדותל מחורר → GBM → דיאפרגמת סדק בין רגליות','דיאפרגמת סדק → GBM → אנדותל','פודוציט → אנדותל → GBM'],a:1,e:'3 שכבות: (1) fenestrated endothelium של הנים, (2) GBM משותפת, (3) filtration slit diaphragm בין ה-pedicels של הפודוציטים. "3 F": Fenestrae, Fibrous GBM, Foot processes.'},
+{t:'corpuscle',q:'איזו שכבה במחסום הסינון עוצרת חלבונים גדולים מ-70 kDa גם לפי גודל וגם לפי מטען שלילי?',o:['האנדותל המחורר','ממברנת הבסיס הגלומרולרית (GBM)','תאי המזנגיום','העלה הפריאטלי'],a:1,e:'ה-GBM עבה (300–360 ננומטר), בנויה מקולגן IV, למינין, פיברונקטין ופרוטאוגליקנים עם GAGs פוליאניוניים. המטען השלילי דוחה חלבונים שליליים כמו אלבומין.'},
+{t:'corpuscle',q:'ה-Pedicels (רגליות) שייכים ל:',o:['תאי אנדותל','תאים מזנגיאליים','פודוציטים (העלה הויסצרלי)','תאי מקולה דנסה'],a:2,e:'פודוציט = גוף תא → זיזים ראשוניים → זיזים שניוניים (pedicels) שיושבים על ה-GBM. ביניהם סדקי סינון (~30 ננומטר) עם slit diaphragm (nephrin).'},
+{t:'corpuscle',q:'מה מהבאים הוא תפקיד של התאים המזנגיאליים?',o:['הפרשת רנין','סינון חלבונים קטנים','תמיכה בנימים, כיווץ ופגוציטוזה של אגרגטים','ספיגת מים בתגובה ל-ADH'],a:2,e:'תאים דמויי-פריציטים בין הנימים: תמיכה פיזית, כיווץ (ויסות GFR), פגוציטוזה של חלבונים שנתקעו ב-GBM, והפרשת ציטוקינים/פרוסטגלנדינים. רנין מופרש מתאי JG.'},
+{t:'corpuscle',q:'איפה נמצאים קוטב כלי הדם וקוטב השתן של הגופיף?',o:['באותו צד של הגופיף','בצדדים מנוגדים; בקוטב השתן מתחיל ה-PCT','קוטב השתן בתוך הגלומרולוס','אין קטבים לגופיף'],a:1,e:'בקוטב כלי הדם (vascular pole) נכנס העורקיק המביא ויוצא המוליך, ושם צמודים גם macula densa ותאי JG. בקוטב השתן (urinary/tubular pole) הקופסית ממשיכה ל-PCT.'},
+{t:'tubules',q:'צינורית בקליפה עם ציטופלסמה אצידופילית מאוד, לומן "מלא פלומה" ומעט גרעינים בחתך. מהי?',o:['צינורית מפותלת רחוקה (DCT)','צינור מאסף','צינורית מפותלת קרובה (PCT)','זרוע דקה של לולאת הנלה'],a:2,e:'PCT: הרבה מיטוכונדריות (ורוד עמוק), brush border (לומן מטושטש/סתום), תאים גדולים ולכן מעט גרעינים בחתך. "P = Pink, Plush, Paucity of nuclei".'},
+{t:'tubules',q:'מה מבדיל DCT מ-PCT בחתך H&E?',o:['ל-DCT יש גבול מברשת בולט','DCT ורודה יותר','ל-DCT לומן פתוח ונקי, תאים נמוכים יותר, והרבה יותר גרעינים בחתך','DCT נמצאת רק בלשד'],a:2,e:'DCT: בלי brush border (לומן ריק), תאים קטנים וחיוורים (פחות מיטוכונדריות), ולכן נספרים הרבה יותר גרעינים בחתך. "התשובה בגרעינים".'},
+{t:'tubules',q:'איזה אפיתל מצפה את הזרועות הדקות של לולאת הנלה?',o:['קובואידלי פשוט עם מברשת','קשקשי פשוט','גלילי פשוט','אפיתל מעבר'],a:1,e:'הזרועות הדקות (יורדת ועולה) בנויות simple squamous עם מעט מיטוכונדריות, מתאים למעבר פסיבי. הן נראות כמעט כמו נימים.'},
+{t:'tubules',q:'בלשד רואים שני צינורות דקים ודומים. איך מבדילים זרוע דקה של הנלה מ-vasa recta?',o:['ל-vasa recta יש גבול מברשת','בזרוע הדקה יש כדוריות אדומות','ב-vasa recta יש כדוריות אדומות בלומן','אי אפשר להבדיל'],a:2,e:'שניהם מצופים תאים שטוחים. הסימן המכריע הוא תוכן הלומן: RBC = כלי דם. גרעיני האנדותל גם שטוחים יותר.'},
+{t:'tubules',q:'מה מאפיין את הזרוע העולה העבה (TAL)?',o:['קשקשי פשוט, חדירה גבוהה למים','קובואידלי פשוט בלי מברשת, הרבה מיטוכונדריות, שאיבה אקטיבית של Na⁺ ואטימות למים','קובואידלי עם מברשת, ספיגת גלוקוז','גלילי פשוט עם תאי מטרייה'],a:1,e:'TAL שואבת NaCl אקטיבית החוצה בלי לתת למים לעבור, ולכן מדללת את התסנין ובונה את המפל ההיפרטוני בלשד. היא מסתיימת ב-macula densa.'},
+{t:'tubules',q:'בקרן לשדית שלושה צינורות ישרים זה לצד זה. איזה מהם הכי חיוור, עם גבולות תאים חדים?',o:['צינורית פרוקסימלית ישרה (PST)','זרוע עולה עבה (TAL)','צינור מאסף (CD)','כולם זהים'],a:2,e:'לפי "כמה ורוד": PST (ורוד, מברשת) > TAL (בינוני, לומן נקי, יותר גרעינים) > CD (חיוור, "אריחים", לומן גדול).'},
+{t:'tubules',q:'איזה מהבאים הוא תפקיד של ה-PCT?',o:['ספיגת 100% מהגלוקוז וחומצות האמינו ו-2/3 מהמים והנתרן','ספיגת מים בתגובה ל-ADH','הפרשת רנין','חישת ריכוז Na⁺ בלומן'],a:0,e:'ה-PCT היא "תחנת הכוח": 2/3 מהמים, Na⁺, Cl⁻; כל הגלוקוז וחומצות האמינו; רוב ה-HCO₃⁻. גם מפרישה קריאטינין, חומצת שתן ותרופות.'},
+{t:'jga',q:'איפה בדיוק נמצאת ה-Macula densa?',o:['בדופן ה-PCT ליד קוטב השתן','בדופן תחילת ה-DCT, צמודה לעורקיק המביא בקוטב כלי הדם','בתוך הגלומרולוס','בדופן הצינור המאסף'],a:1,e:'ה-TAL חוזרת לגופיף שלה ונוגעת בעורקיק המביא; שם תאי הדופן נעשים גבוהים וצפופים = macula densa. זה גם מסמן את תחילת ה-DCT.'},
+{t:'jga',q:'מי מפריש רנין?',o:['תאי מקולה דנסה','תאי Lacis','תאי JG (גרנולריים): תאי שריר חלק ששונו בדופן העורקיק המביא','תאי אנדותל של הגלומרולוס'],a:2,e:'תאי JG = תאי שריר חלק של הטוניקה מדיה בעורקיק המביא שהפכו לתאי הפרשה עם גרגירי רנין. בצביעה אימונית לרנין הם נצבעים.'},
+{t:'jga',q:'עלייה בזרימת Na⁺ במקולה דנסה (GFR גבוה) גורמת ל:',o:['הפרשת ATP/אדנוזין, כיווץ העורקיק המביא וירידה בהפרשת רנין','הפרשת PGE₂/NO והרחבת העורקיק המביא','עלייה בהפרשת רנין','כיווץ העורקיק המוליך בלבד'],a:0,e:'TG feedback: הרבה מלח = GFR גבוה מדי → ATP/אדנוזין → כיווץ afferent → GFR יורד; במקביל רנין יורד. מעט מלח → PGE₂/NO → הרחבה ורנין עולה.'},
+{t:'jga',q:'איזה מהבאים מגביר הפרשת רנין?',o:['עלייה בלחץ בעורקיק המביא','עלייה בזרימת Na⁺ במקולה דנסה','גירוי סימפתטי דרך רצפטור β₁ בתאי JG','עלייה בנפח הדם'],a:2,e:'"סימפתטי מעלה; לחץ ומלח מורידים". נוראפינפרין על β₁ מגביר רנין; לחץ גבוה בעורקיק (ברורצפטור) ומלח רב ב-MD מדכאים.'},
+{t:'cd',q:'איזה תא בצינור המאסף מגיב ל-ADH באמצעות Aquaporin-2?',o:['תא משולב (Intercalated) סוג A','תא עיקרי (Principal)','תא מטרייה','תא מקולה דנסה'],a:1,e:'התאים העיקריים (~70%, חיוורים, גבולות ברורים) מכניסים AQP2 לממברנה האפיקלית בנוכחות ADH, והמים יוצאים אל הלשד ההיפרטוני ול-vasa recta.'},
+{t:'cd',q:'תא משולב מסוג A (Type A intercalated cell):',o:['מפריש H⁺','מפריש HCO₃⁻','סופג מים','מפריש רנין'],a:0,e:'סוג A מפריש H⁺ (מתקן חמצת), סוג B מפריש HCO₃⁻ (מתקן בססת). התאים המשולבים כהים יותר, עשירים במיטוכונדריות, ויש להם קפלים אפיקליים.'},
+{t:'cd',q:'הצינורות הפפילריים (ducts of Bellini) נשפכים אל:',o:['האגן ישירות','הגביע הקטן (minor calyx), ושם האפיתל מתחלף לאורותל','השופכן','הגביע הגדול'],a:1,e:'בקודקוד הפירמידה (area cribrosa) הצינורות הפפילריים נפתחים אל הגביע הקטן. האפיתל הגלילי של ה-CD הופך בבת אחת ל-urothelium.'},
+{t:'blood',q:'מהו הסדר הנכון של העורקים מעורק הכליה ועד העורקיק המביא?',o:['Renal → Arcuate → Interlobar → Interlobular → Afferent','Renal → Segmental → Interlobar → Arcuate → Interlobular → Afferent','Renal → Interlobular → Arcuate → Interlobar → Afferent','Renal → Segmental → Arcuate → Interlobar → Afferent'],a:1,e:'Really Smart Interns Always Identify Arterioles. Interlobar בעמודות בין הפירמידות → Arcuate על בסיס הפירמידה → Interlobular (cortical radiate) עולים בקליפה.'},
+{t:'blood',q:'מאיפה יוצאים ה-Vasa recta?',o:['מהעורקיק המביא','מהעורקיק המוליך של נפרונים ג\'וקסטה-מדולריים','מהעורקים הקשתיים ישירות','מהנימים הפריטובולריים של נפרונים קורטיקליים'],a:1,e:'העורקיק המוליך של נפרון קורטיקלי → נימים פריטובולריים. של נפרון ג\'וקסטה-מדולרי → vasa recta שיורדים ללשד ושומרים על המפל ההיפרטוני בחילוף זרם-נגדי.'},
+{t:'lower',q:'מה מאפיין את תאי המטרייה (Umbrella cells)?',o:['תאים קטנים בשכבה הבזלית','תאים גדולים בשכבה השטחית, לעיתים דו-גרעיניים, עם פלאקים של uroplakin','תאים גליליים עם ריסים','תאים קשקשיים מקורננים'],a:1,e:'תאי המטרייה (עד 100 מיקרון) מכסים כמה תאי ביניים. הממברנה האפיקלית א-סימטרית (AUM) עם פלאקים נוקשים של uroplakins, ויחד עם tight junctions יוצרת מחסום אוסמוטי.'},
+{t:'lower',q:'מה קורה לאורותל של השלפוחית כשהיא מתמלאת?',o:['מספר השכבות עולה מ-2–3 ל-5–7','הוא נעשה דק יותר: מ-5–7 שכבות ל-2–3, והבועיות עם הפלאקים מתמזגות לממברנה האפיקלית','הוא עובר מטאפלזיה לקשקשי','הוא מתקלף ומתחדש'],a:1,e:'בשלפוחית מלאה הקפלים נעלמים, תאי הביניים זזים הצידה, העובי יורד לחצי, ותאי המטרייה פורשים את הפלאקים ששמרו בבועיות.'},
+{t:'lower',q:'איזו שכבה חסרה בדופן השופכן אבל קיימת בשלפוחית?',o:['אורותל','Lamina propria','סאב-מוקוזה','אדוונטיציה'],a:2,e:'שופכן: אורותל, lamina propria, שריר (2 שכבות: אורכית פנימית והיקפית חיצונית), אדוונטיציה. בלי סאב-מוקוזה. שלפוחית: גם סאב-מוקוזה ודטרוזור של 3 שכבות. השופכן מזוהה גם בלומן הכוכבי.'},
+{t:'lower',q:'איזה אפיתל מצפה את השופכה הממברנוזית בגבר?',o:['אפיתל מעבר','קשקשי רב-שכבתי מקורנן','רב-שכבתי גלילי / פסאודו-סטרטיפיקציה גלילי','קובואידלי פשוט'],a:2,e:'T-C-C-S: פרוסטטית = Transitional; ממברנוזית וספוגית = stratified/pseudostratified Columnar; הקצה = stratified Squamous. הממברנוזית עוברת בסוגר החיצוני המשורטט.'},
+{t:'lower',q:'מהו האפיתל ברוב אורכה של השופכה הנשית?',o:['אפיתל מעבר לכל האורך','קשקשי רב-שכבתי לא מקורנן, המשך לעור השפתיים הקטנות','גלילי פשוט','קובואידלי רב-שכבתי'],a:1,e:'השופכה הנשית (3–5 ס"מ) מתחילה באורותל ועוברת במהירות ל-non-keratinized stratified squamous. היא איבר שתן בלבד, מוקפת בחלקה האמצעי בסוגר משורטט.'},
+];
+
+const topicNames={gross:'מבנה כללי',corpuscle:'גופיף ומחסום סינון',tubules:'זיהוי צינוריות',jga:'JGA ו-RAAS',cd:'צינור מאסף',blood:'אספקת דם',lower:'דרכי השתן'};
+let order=Q.map((_,i)=>i), state={};
+const sel=document.getElementById('topic');
+Object.keys(topicNames).forEach(k=>{const o=document.createElement('option');o.value=k;o.textContent=topicNames[k]+' ('+Q.filter(q=>q.t===k).length+')';sel.appendChild(o);});
+
+function render(){
+  const root=document.getElementById('quiz');root.innerHTML='';
+  order.forEach((qi,n)=>{
+    const q=Q[qi];const d=document.createElement('div');d.className='q'+(state[qi]!==undefined?' done':'');d.dataset.t=q.t;d.dataset.i=qi;
+    let h='<div class="meta"><span>'+(n+1)+'/'+Q.length+'</span><span>'+topicNames[q.t]+'</span></div><h3>'+q.q+'</h3><div class="opts">';
+    q.o.forEach((o,k)=>{let c='opt';if(state[qi]!==undefined){if(k===q.a)c+=' correct';else if(k===state[qi])c+=' wrong';}h+='<div class="'+c+'" data-k="'+k+'">'+o+'</div>';});
+    h+='</div><div class="exp">'+q.e+'</div>';d.innerHTML=h;root.appendChild(d);
+  });
+  root.querySelectorAll('.q:not(.done) .opt').forEach(el=>el.addEventListener('click',onPick));
+  filter();updateScore();
+}
+function onPick(e){
+  const qd=e.target.closest('.q');const qi=+qd.dataset.i;const k=+e.target.dataset.k;
+  if(state[qi]!==undefined)return;state[qi]=k;qd.classList.add('done');
+  qd.querySelectorAll('.opt').forEach(o=>{const kk=+o.dataset.k;if(kk===Q[qi].a)o.classList.add('correct');else if(kk===k)o.classList.add('wrong');o.removeEventListener('click',onPick);});
+  updateScore();
+}
+function updateScore(){
+  const n=Object.keys(state).length;const c=Object.keys(state).filter(i=>state[i]===Q[i].a).length;
+  document.getElementById('answered').textContent=n;document.getElementById('correct').textContent=c;
+  document.getElementById('bar').style.width=(100*c/Q.length)+'%';
+  const f=document.getElementById('final');
+  if(n===Q.length){f.style.display='block';const pct=Math.round(100*c/Q.length);
+    f.innerHTML='<b>סיימת! '+c+'/'+Q.length+' ('+pct+'%)</b><br>'+(pct>=85?'מצוין, אתם מוכנים.':pct>=70?'טוב. עברו שוב על ההסברים בשאלות שטעיתם בהן.':'כדאי לחזור לסיכום ולעשות את הבוחן שוב.');
+    const wrong=Object.keys(state).filter(i=>state[i]!==Q[i].a).map(i=>Q[i].t);
+    if(wrong.length){const cnt={};wrong.forEach(t=>cnt[t]=(cnt[t]||0)+1);f.innerHTML+='<br>נושאים לחיזוק: '+Object.keys(cnt).map(t=>topicNames[t]+' ('+cnt[t]+')').join(', ');}
+  } else f.style.display='none';
+}
+function filter(){const t=sel.value;document.querySelectorAll('.q').forEach(d=>d.classList.toggle('hidden',t!=='all'&&d.dataset.t!==t));}
+sel.addEventListener('change',filter);
+document.getElementById('shuffle').addEventListener('click',()=>{for(let i=order.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]];}render();window.scrollTo(0,0);});
+document.getElementById('reset').addEventListener('click',()=>{state={};render();window.scrollTo(0,0);});
+document.getElementById('showAll').addEventListener('click',()=>{document.querySelectorAll('.q').forEach(d=>d.classList.add('done'));});
+document.getElementById('total').textContent=Q.length;
+render();
+</script>
+</body>
+</html>
